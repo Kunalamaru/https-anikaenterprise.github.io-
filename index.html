@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M/s Anika Enterprise | Civil Engineers &amp; Contractors — Mumbai</title>
     <meta name="description" content="M/s Anika Enterprise — Civil Engineers &amp; Contractors in Goregaon (W), Mumbai specializing in Cement Concrete (CC) Roads, Asphalt Roads, Storm Water Drains, Multimodal Integration, and Mumbai Metro Corridor Civil Infrastructure.">
+    <meta name="theme-color" content="#0B1526">
+
+    <!-- Open Graph / WhatsApp & LinkedIn Link Preview Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="M/s Anika Enterprise | Civil Engineers &amp; Contractors — Mumbai">
+    <meta property="og:description" content="Executing ₹101.7+ Cr in Cement Concrete (CC) Roads, Asphalt Roads, Storm Water Drains &amp; Multimodal Integration along Mumbai Metro Corridors (DMRC / MMRDA).">
+    <meta property="og:locale" content="en_IN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="M/s Anika Enterprise | Civil Engineers &amp; Contractors">
+    <meta name="twitter:description" content="Specialists in Cement Concrete (CC) Roads, Asphalt Roads &amp; Mumbai Metro Corridor Civil Infrastructure.">
+
+    <!-- Inline SVG AE Brand Favicon (Dark-Surface Calibration on Sovereign Midnight #0B1526) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 90'%3E%3Crect width='130' height='90' rx='14' fill='%230B1526'/%3E%3Cpath d='M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z' fill='%235B91CE'/%3E%3Cpath d='M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z' fill='%23487AB5'/%3E%3Cpath d='M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z' fill='%230B1526' stroke='%230B1526' stroke-width='3.5' stroke-linejoin='round'/%3E%3Cpath d='M5 81 C28 43, 68 24, 125 32.5 C81 29.5, 45 48, 22 81 Z' fill='%23F5BE18'/%3E%3C/svg%3E">
 
     <!-- Google Fonts: Playfair Display (Executive Serif) & Inter (Clean Modern Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,35 +27,43 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind Custom Design Tokens (Rich Warm Creme + Official Letterhead Navy-to-Steel-Blue + Metallic Gold) -->
+    <!-- Tailwind Custom Design Tokens — Option A: Architectural Alabaster & Sovereign Gold (60/30/10 System) -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         creme: {
-                            light: '#FFFDF8',   /* Warm ivory card surface */
-                            base: '#FAF4E6',    /* Primary rich warm creme */
-                            deep: '#F3EBD8',    /* Alternating warm creme */
-                            border: '#E3D7BC',  /* Warm sand-gold border */
+                            light: '#FFFFFF',    /* Pure Warm White elevated card surface */
+                            base: '#F8F6F1',     /* Architectural Alabaster primary canvas (60%) */
+                            deep: '#EFECE4',     /* Warm Limestone alternating band */
+                            border: '#DDD6C7',   /* Travertine structural hairline border */
+                            goldtint: '#FCF9F0', /* Subtle sovereign-gold wash for flagship cards */
                         },
                         navy: {
-                            deep: '#121F36',    /* High-contrast deep navy */
-                            base: '#1B2E4E',    /* Official letterhead navy */
-                            mid: '#27426B',     /* Mid slate-blue */
-                            steel: '#4E76A8',   /* Letterhead steel-cerulean blue */
+                            header: '#0B1526',   /* Sovereign Midnight sticky header & footer (30%) */
+                            deep: '#0F1D33',     /* Deep Blueprint Midnight */
+                            base: '#1B3256',     /* Core Engineering Navy */
+                            mid: '#233F6B',      /* Mid Slate Navy */
+                            steel: '#5B91CE',    /* Bright Steel Blue (Dark-Surface AE Monogram) */
                         },
                         gold: {
-                            bright: '#F9D65C',  /* High-contrast bright gold for dark backgrounds */
-                            primary: '#F5BE18', /* Letterhead golden-yellow */
-                            hover: '#E2A80C',   /* Hover gold */
-                            metallic: '#C5941E',/* Metallic accent gold */
-                            dark: '#8C650D',    /* High-contrast antique gold for creme surfaces */
+                            bright: '#F6CA4D',   /* High-luminance Sovereign Gold on dark surfaces */
+                            primary: '#E5A913',  /* Brushed Sovereign Gold primary accent (10%) */
+                            hover: '#CC930A',    /* Refined Sovereign Gold hover state */
+                            metallic: '#BA8814', /* Brushed Brass metallic accent */
+                            dark: '#7A5408',     /* Engraved Antique Brass (WCAG AAA on Alabaster) */
+                        },
+                        forest: {
+                            badge: '#164E3D',    /* Deep Architectural Forest for Completed badges */
+                            cta: '#164E3D',      /* Unified Architectural Forest WhatsApp CTA */
+                            hover: '#103B2E',    /* Deep Forest hover state */
+                            border: '#B6CCC3',   /* Muted Sage-Slate border for Completed cards */
                         },
                         ink: {
-                            heading: '#121F36', /* Deep navy headings */
-                            body: '#334155',    /* Crisp slate body text */
-                            muted: '#526074',   /* Readable secondary text */
+                            heading: '#0B1526',  /* Sovereign Midnight headings */
+                            body: '#2E3B4E',     /* Crisp architectural slate body text */
+                            muted: '#4B596B',    /* Readable secondary metadata */
                         }
                     },
                     fontFamily: {
@@ -50,54 +71,64 @@
                         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
                     },
                     boxShadow: {
-                        'creme-card': '0 10px 28px -10px rgba(18, 31, 54, 0.10)',
-                        'creme-hover': '0 18px 36px -12px rgba(18, 31, 54, 0.16)',
-                        'gold-btn': '0 8px 20px -6px rgba(245, 190, 24, 0.42)',
+                        'creme-card': '0 10px 28px -12px rgba(11, 21, 38, 0.09)',
+                        'creme-hover': '0 18px 38px -14px rgba(11, 21, 38, 0.16)',
+                        'gold-btn': '0 8px 20px -6px rgba(229, 169, 19, 0.42)',
                     }
                 }
             }
         };
     </script>
 
-    <!-- Custom Styles: Guaranteed Solid Dark Gradients, Separate Bokeh Layer, High-Contrast Contact & Footer Rules -->
+    <!-- Custom Styles: Option A Sovereign Midnight & Architectural Alabaster Visual System -->
     <style>
         body {
             font-family: 'Inter', system-ui, sans-serif;
-            background-color: #FAF4E6;
-            color: #334155;
+            background-color: #F8F6F1;
+            color: #2E3B4E;
             overflow-x: hidden;
         }
 
-        /* Official Letterhead Deep-Navy to Steel-Blue Gradient (Guaranteed Solid Fallback) */
-        .letterhead-gradient {
-            background-color: #162642;
-            background-image: linear-gradient(112deg, #121F36 0%, #1F365C 48%, #4A72A5 100%);
+        /* Tabular Engineering Numerals for BOQ-Grade Alignment */
+        .tabular-eng {
+            font-variant-numeric: tabular-nums;
         }
 
-        /* Deep Navy Contact Card Gradient */
+        /* Prevent Sticky Header From Overlapping Anchored Section Headings */
+        section[id] {
+            scroll-margin-top: 80px;
+        }
+
+        /* Blueprint Midnight-Steel Gradient (Hero & About Profile Banner) */
+        .letterhead-gradient {
+            background-color: #0F1D33;
+            background-image: linear-gradient(112deg, #0F1D33 0%, #1B3256 50%, #294973 100%);
+        }
+
+        /* Sovereign Midnight Contact Card Gradient */
         .contact-navy-card {
-            background-color: #121F36 !important;
-            background-image: linear-gradient(145deg, #121F36 0%, #1B2E4E 55%, #27426B 100%) !important;
+            background-color: #0B1526 !important;
+            background-image: linear-gradient(145deg, #0B1526 0%, #132542 56%, #1E3860 100%) !important;
             color: #FFFFFF;
         }
         .contact-navy-card a.contact-link {
             color: #FFFFFF !important;
             text-decoration: underline;
-            text-decoration-color: rgba(249, 214, 92, 0.65);
+            text-decoration-color: rgba(246, 202, 77, 0.65);
             text-underline-offset: 4px;
             transition: color 0.2s ease;
         }
         .contact-navy-card a.contact-link:hover {
-            color: #F9D65C !important;
+            color: #F6CA4D !important;
         }
 
-        /* CRITICAL FOOTER FIX: Explicit Solid Un-Overridable Deep Navy Background & High-Contrast Typography */
+        /* Sovereign Midnight Executive Footer */
         footer.site-footer {
             position: relative;
             overflow: hidden;
-            background-color: #121F36 !important;
-            background: linear-gradient(135deg, #0E182B 0%, #192B4A 55%, #243E68 100%) !important;
-            border-top: 4px solid #F5BE18 !important;
+            background-color: #0B1526 !important;
+            background: linear-gradient(135deg, #08101D 0%, #0B1526 52%, #152744 100%) !important;
+            border-top: 4px solid #E5A913 !important;
             color: #E2E8F0 !important;
         }
         footer.site-footer .footer-bokeh {
@@ -106,9 +137,9 @@
             pointer-events: none;
             z-index: 0;
             background-image:
-                radial-gradient(circle at 14% 25%, rgba(255, 255, 255, 0.04) 0%, transparent 28%),
-                radial-gradient(circle at 84% 72%, rgba(249, 214, 92, 0.04) 0%, transparent 26%),
-                radial-gradient(circle at 52% 18%, rgba(148, 190, 240, 0.04) 0%, transparent 24%);
+                radial-gradient(circle at 14% 25%, rgba(255, 255, 255, 0.035) 0%, transparent 28%),
+                radial-gradient(circle at 84% 72%, rgba(229, 169, 19, 0.045) 0%, transparent 26%),
+                radial-gradient(circle at 52% 18%, rgba(91, 145, 206, 0.04) 0%, transparent 24%);
         }
         footer.site-footer .footer-content {
             position: relative;
@@ -119,21 +150,21 @@
             transition: color 0.2s ease;
         }
         footer.site-footer a:hover {
-            color: #F9D65C !important;
+            color: #F6CA4D !important;
         }
 
-        /* Separate Decorative Bokeh Layer for Hero/Banners (Never overrides parent background) */
+        /* Separate Decorative Bokeh Layer for Hero/Banners */
         .bokeh-layer {
             position: absolute;
             inset: 0;
             pointer-events: none;
             z-index: 0;
             background-image:
-                radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.07) 0%, transparent 26%),
-                radial-gradient(circle at 48% 68%, rgba(168, 200, 240, 0.09) 0%, transparent 22%),
-                radial-gradient(circle at 74% 24%, rgba(255, 255, 255, 0.08) 0%, transparent 24%),
-                radial-gradient(circle at 86% 74%, rgba(214, 232, 255, 0.09) 0%, transparent 20%),
-                radial-gradient(circle at 30% 82%, rgba(245, 190, 24, 0.05) 0%, transparent 18%);
+                radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.055) 0%, transparent 26%),
+                radial-gradient(circle at 48% 68%, rgba(168, 200, 240, 0.06) 0%, transparent 22%),
+                radial-gradient(circle at 74% 24%, rgba(255, 255, 255, 0.06) 0%, transparent 24%),
+                radial-gradient(circle at 86% 74%, rgba(214, 232, 255, 0.07) 0%, transparent 20%),
+                radial-gradient(circle at 30% 82%, rgba(229, 169, 19, 0.05) 0%, transparent 18%);
         }
 
         /* Subtle Engineering Blueprint Grid Overlay */
@@ -143,14 +174,14 @@
             pointer-events: none;
             z-index: 0;
             background-image:
-                linear-gradient(to right, rgba(249, 214, 92, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(249, 214, 92, 0.05) 1px, transparent 1px),
+                linear-gradient(to right, rgba(246, 202, 77, 0.045) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(246, 202, 77, 0.045) 1px, transparent 1px),
                 linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
             background-size: 96px 96px, 96px 96px, 24px 24px, 24px 24px;
         }
 
-        /* Classic Letterhead Double-Line Metallic Gold Divider */
+        /* Signature Double-Line Brushed Brass Motif (Carried from Official Letterhead) */
         .gold-double-rule {
             display: inline-flex;
             flex-direction: column;
@@ -162,7 +193,7 @@
             content: '';
             display: block;
             height: 1.5px;
-            background: linear-gradient(90deg, #C5941E 0%, #F5BE18 55%, #C5941E 100%);
+            background: linear-gradient(90deg, #BA8814 0%, #E5A913 55%, #BA8814 100%);
             border-radius: 999px;
         }
         .gold-double-rule::after {
@@ -171,7 +202,7 @@
 
         /* Subtle Text Drop Shadow matching Official Letterhead Golden Title */
         .letterhead-title-shadow {
-            text-shadow: 0 2px 6px rgba(8, 15, 28, 0.55);
+            text-shadow: 0 2px 6px rgba(5, 11, 22, 0.58);
         }
 
         /* Service Card Top Accent Bar */
@@ -186,11 +217,11 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #121F36 0%, #4E76A8 55%, #F5BE18 100%);
-            opacity: 0.9;
+            background: linear-gradient(90deg, #0B1526 0%, #487AB5 58%, #E5A913 100%);
+            opacity: 0.92;
         }
         .service-card.featured-service::before {
-            background: linear-gradient(90deg, #C5941E 0%, #F5BE18 55%, #E2A80C 100%);
+            background: linear-gradient(90deg, #BA8814 0%, #E5A913 55%, #CC930A 100%);
             height: 5px;
             opacity: 1;
         }
@@ -200,10 +231,10 @@
             transition: all 0.2s ease;
         }
         .filter-tab.active-tab {
-            background-color: #121F36;
-            color: #F9D65C;
-            border-color: #121F36;
-            box-shadow: 0 6px 16px -6px rgba(18, 31, 54, 0.35);
+            background-color: #0B1526;
+            color: #F6CA4D;
+            border-color: #0B1526;
+            box-shadow: 0 6px 16px -6px rgba(11, 21, 38, 0.35);
         }
 
         /* Scroll-Reveal Animation */
@@ -221,73 +252,200 @@
         #toast-notification {
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
+
+        /* Full Scroll-Spy Active Navigation Highlight */
+        .nav-link-active {
+            color: #F6CA4D !important;
+            border-bottom: 2px solid #E5A913;
+            padding-bottom: 2px;
+        }
+        .mobile-nav-link-active {
+            background-color: #1B3256;
+            color: #F6CA4D !important;
+            border-left: 3px solid #E5A913;
+        }
+
+        /* Floating Home / Top Button */
+        #floating-home-btn {
+            transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Architectural Blueprint Roads & Bridge Line-Art Overlay */
+        .hero-blueprint-art {
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.12) 22%, rgba(0, 0, 0, 0.85) 54%, rgba(0, 0, 0, 1) 100%);
+            mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.12) 22%, rgba(0, 0, 0, 0.85) 54%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        /* Mobile Readability Scrim for Hero Text over Blueprint */
+        .hero-mobile-scrim {
+            background: linear-gradient(180deg, rgba(11, 21, 38, 0.74) 0%, rgba(15, 29, 51, 0.45) 60%, rgba(15, 29, 51, 0.24) 100%);
+        }
+        @media (min-width: 1024px) {
+            .hero-mobile-scrim {
+                background: linear-gradient(90deg, rgba(11, 21, 38, 0.56) 0%, rgba(15, 29, 51, 0.18) 48%, transparent 72%);
+            }
+        }
+
+        /* One-Shot Rising Light Effect (Tapered Comet-Tail Beams, Bottom -> Top-Right) */
+        #blueprint-light-runners {
+            filter: drop-shadow(0 0 5px rgba(186, 230, 253, 0.85));
+        }
+        @keyframes bpLightTailSweep {
+            0% {
+                stroke-dashoffset: 30;
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.62;
+            }
+            82% {
+                opacity: 0.62;
+            }
+            100% {
+                stroke-dashoffset: -102;
+                opacity: 0;
+            }
+        }
+        @keyframes bpLightHeadSweep {
+            0% {
+                stroke-dashoffset: 7;
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            82% {
+                opacity: 1;
+            }
+            100% {
+                stroke-dashoffset: -125;
+                opacity: 0;
+            }
+        }
+        .bp-light-tail {
+            stroke-dasharray: 28 131;
+            stroke-dashoffset: 30;
+            stroke-linecap: round;
+            opacity: 0;
+            will-change: stroke-dashoffset, opacity;
+        }
+        .bp-light-head {
+            stroke-dasharray: 5 154;
+            stroke-dashoffset: 7;
+            stroke-linecap: round;
+            opacity: 0;
+            will-change: stroke-dashoffset, opacity;
+        }
+        #blueprint-light-runners.bp-lights-active .bp-light-tail {
+            animation-name: bpLightTailSweep;
+            animation-duration: var(--bp-dur, 2.6s);
+            animation-delay: var(--bp-delay, 0s);
+            animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        #blueprint-light-runners.bp-lights-active .bp-light-head {
+            animation-name: bpLightHeadSweep;
+            animation-duration: var(--bp-dur, 2.6s);
+            animation-delay: var(--bp-delay, 0s);
+            animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        /* Accessibility: Respect User Reduced-Motion Preference */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto !important;
+            }
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+            .bp-light-tail,
+            .bp-light-head {
+                animation: none !important;
+                opacity: 0 !important;
+            }
+        }
     </style>
 </head>
-<body class="bg-creme-base text-ink-body antialiased selection:bg-gold-primary selection:text-navy-deep">
+<body class="bg-creme-base text-ink-body antialiased selection:bg-gold-primary selection:text-navy-header">
 
     <!-- =========================================================
-         1. STICKY TOP NAVIGATION BAR (OFFICIAL LETTERHEAD GRADIENT)
+         1. STICKY TOP NAVIGATION BAR (SOVEREIGN MIDNIGHT #0B1526)
     ========================================================== -->
-    <header id="navbar" class="sticky top-0 z-50 letterhead-gradient border-b-2 border-gold-primary/80 transition-shadow duration-300">
+    <header id="navbar" class="sticky top-0 z-50 bg-navy-header border-b-2 border-gold-primary transition-shadow duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
 
-                <!-- Brand Lockup with Self-Contained Inline SVG AE Logo -->
+                <!-- Brand Lockup with Dual-Mode Dark-Surface Inline SVG AE Logo -->
                 <a href="#home" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Anika Enterprise Home">
                     <svg class="w-12 h-9 sm:w-14 sm:h-10 flex-shrink-0 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 130 90" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anika Enterprise AE Logo">
-                        <!-- Bold Steel-Blue Letter A -->
-                        <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#4B7BB6"/>
-                        <!-- Bold Steel-Blue Letter E -->
-                        <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#3D699E"/>
-                        <!-- Knockout Stroke for Clean Separation -->
-                        <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#121F36" stroke="#121F36" stroke-width="3.5" stroke-linejoin="round"/>
-                        <!-- Sweeping Golden-Yellow Swoosh -->
+                        <!-- Bright Steel-Blue Letter A (#5B91CE for crisp contrast on dark navy) -->
+                        <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#5B91CE"/>
+                        <!-- Elevated Slate-Blue Letter E (#487AB5 for crisp legibility at all scales) -->
+                        <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#487AB5"/>
+                        <!-- Sovereign Midnight Knockout Gap (#0B1526) -->
+                        <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#0B1526" stroke="#0B1526" stroke-width="3.5" stroke-linejoin="round"/>
+                        <!-- Rising Sovereign Gold Swoosh (#F5BE18) -->
                         <path d="M5 81 C28 43, 68 24, 125 32.5 C81 29.5, 45 48, 22 81 Z" fill="#F5BE18"/>
                     </svg>
                     <div class="flex flex-col">
                         <span class="font-serif font-bold text-gold-bright text-xl sm:text-2xl tracking-wide leading-none letterhead-title-shadow">
                             Anika Enterprise
                         </span>
-                        <span class="inline-block mt-1.5 px-2 py-0.5 rounded bg-navy-deep/90 border border-gold-bright/35 text-[10px] sm:text-[11px] font-semibold text-white tracking-[0.12em] uppercase w-fit">
+                        <span class="inline-block mt-1.5 px-2 py-0.5 rounded bg-navy-base border border-gold-bright/35 text-[10px] sm:text-[11px] font-semibold text-white tracking-[0.14em] uppercase w-fit">
                             Civil Engineers &amp; Contractors
                         </span>
                     </div>
                 </a>
 
-                <!-- Desktop Navigation Links -->
+                <!-- Desktop Navigation Links (With Full Scroll-Spy Targets) -->
                 <nav class="hidden lg:flex items-center gap-6" aria-label="Primary Navigation">
-                    <a href="#about" class="text-sm font-medium text-white hover:text-gold-bright transition-colors">About Us</a>
-                    <a href="#services" class="text-sm font-medium text-white hover:text-gold-bright transition-colors">Core Services</a>
-                    <a href="#projects" class="text-sm font-medium text-white hover:text-gold-bright transition-colors">Projects</a>
-                    <a href="#leadership" class="text-sm font-medium text-white hover:text-gold-bright transition-colors">Leadership</a>
-                    <a href="#contact" class="text-sm font-medium text-white hover:text-gold-bright transition-colors">Get in Touch</a>
-                    <a href="#contact" class="ml-2 inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-gold-primary text-navy-deep font-bold text-xs uppercase tracking-wider shadow-gold-btn hover:bg-gold-hover transition-all duration-200">
-                        Request Quote
+                    <a href="#home" data-section="home" class="desktop-nav-link nav-link-active inline-flex items-center gap-1.5 text-sm font-semibold text-white hover:text-gold-bright transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10.5L12 3l9 7.5M5 9.5V20a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V9.5"/>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="#about" data-section="about" class="desktop-nav-link text-sm font-medium text-white hover:text-gold-bright transition-colors">About</a>
+                    <a href="#services" data-section="services" class="desktop-nav-link text-sm font-medium text-white hover:text-gold-bright transition-colors">Services</a>
+                    <a href="#projects" data-section="projects" class="desktop-nav-link text-sm font-medium text-white hover:text-gold-bright transition-colors">Projects</a>
+                    <a href="#leadership" data-section="leadership" class="desktop-nav-link text-sm font-medium text-white hover:text-gold-bright transition-colors">Leadership</a>
+                    <a href="#contact" class="ml-1 inline-flex items-center px-5 py-2.5 rounded-lg bg-gold-primary text-navy-header font-bold text-xs uppercase tracking-wider shadow-gold-btn hover:bg-gold-hover transition-colors">
+                        Get in Touch
                     </a>
                 </nav>
 
-                <!-- Mobile Hamburger Toggle -->
-                <button id="mobile-menu-btn" type="button" class="lg:hidden inline-flex items-center justify-center p-2.5 rounded-lg text-gold-bright hover:bg-navy-deep/80 border border-gold-bright/45 focus:outline-none focus:ring-2 focus:ring-gold-bright" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle Menu">
-                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Mobile Hamburger Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="lg:hidden inline-flex items-center justify-center p-2.5 rounded-lg text-white hover:text-gold-bright hover:bg-navy-base border border-gold-bright/30 focus:outline-none focus:ring-2 focus:ring-gold-bright transition-colors" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <svg id="icon-hamburger" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
-                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                     </svg>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="lg:hidden hidden bg-navy-deep border-t border-gold-primary/35 px-4 pt-3 pb-6 space-y-1 shadow-xl">
-            <a href="#about" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">About Us</a>
-            <a href="#services" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">Core Services</a>
-            <a href="#projects" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">Ongoing &amp; Completed Works</a>
-            <a href="#leadership" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">Leadership Track Record</a>
-            <a href="#contact" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">Get in Touch</a>
-            <div class="pt-3 px-1">
-                <a href="#contact" class="mobile-nav-link w-full inline-flex items-center justify-center px-5 py-3 rounded-lg bg-gold-primary text-navy-deep font-bold text-xs uppercase tracking-wider shadow-gold-btn">
-                    Request Quote
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-header border-t border-gold-primary/40 shadow-xl">
+            <div class="px-4 pt-3 pb-5 space-y-1.5">
+                <a href="#home" data-section="home" class="mobile-nav-link mobile-nav-link-active flex items-center gap-2.5 px-4 py-3 rounded-lg text-sm font-semibold text-white hover:bg-navy-mid transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10.5L12 3l9 7.5M5 9.5V20a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V9.5"/>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="#about" data-section="about" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">About Us</a>
+                <a href="#services" data-section="services" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">Core Services</a>
+                <a href="#projects" data-section="projects" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">Ongoing &amp; Completed Works</a>
+                <a href="#leadership" data-section="leadership" class="mobile-nav-link block px-4 py-3 rounded-lg text-sm font-medium text-white hover:bg-navy-mid hover:text-gold-bright transition-colors">Leadership Track Record</a>
+                <a href="#contact" class="mobile-nav-link mt-2 block text-center px-4 py-3 rounded-lg bg-gold-primary text-navy-header font-bold text-xs uppercase tracking-wider hover:bg-gold-hover transition-colors">
+                    Get in Touch
                 </a>
             </div>
         </div>
@@ -295,38 +453,277 @@
 
     <main>
         <!-- =========================================================
-             2. HERO BANNER (LETTERHEAD GRADIENT + BOKEH + ZERO PHOTOS)
+             2. HERO SECTION (BLUEPRINT MIDNIGHT-STEEL GRADIENT)
         ========================================================== -->
-        <section id="home" class="relative letterhead-gradient text-white overflow-hidden">
-            <!-- Separate Bokeh & Blueprint Overlays (z-0, pointer-events-none) -->
+        <section id="home" class="relative overflow-hidden letterhead-gradient text-white">
+            <!-- Decorative Bokeh & Engineering Blueprint Grid Layers -->
             <div class="bokeh-layer" aria-hidden="true"></div>
             <div class="blueprint-grid" aria-hidden="true"></div>
-            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-navy-deep via-gold-primary to-navy-steel z-10"></div>
 
-            <!-- Decorative Engineering Compass Drafting Accent (Desktop Only) -->
-            <div class="hidden xl:block absolute right-14 top-1/2 -translate-y-1/2 opacity-20 pointer-events-none z-0" aria-hidden="true">
-                <svg width="330" height="330" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="18" y="18" width="304" height="304" stroke="#F9D65C" stroke-width="1"/>
-                    <rect x="48" y="48" width="244" height="244" stroke="#FFFFFF" stroke-width="0.75" stroke-dasharray="6 6"/>
-                    <circle cx="170" cy="170" r="102" stroke="#F9D65C" stroke-width="1"/>
-                    <line x1="18" y1="170" x2="322" y2="170" stroke="#FFFFFF" stroke-width="0.65"/>
-                    <line x1="170" y1="18" x2="170" y2="322" stroke="#FFFFFF" stroke-width="0.65"/>
-                    <polygon points="170,66 260,222 80,222" stroke="#F9D65C" stroke-width="1" fill="none"/>
+            <!-- Architectural Blueprint Line-Art -->
+            <div class="hero-blueprint-art absolute inset-y-0 right-0 w-full lg:w-[72%] pointer-events-none z-0 overflow-hidden opacity-25 sm:opacity-45 lg:opacity-90" aria-hidden="true">
+                <svg class="w-full h-full object-cover object-right" viewBox="0 0 1000 580" preserveAspectRatio="xMaxYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bpBright" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.24"/>
+                            <stop offset="40%" stop-color="#DBEAFE" stop-opacity="0.82"/>
+                            <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.98"/>
+                        </linearGradient>
+                        <linearGradient id="bpMid" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.18"/>
+                            <stop offset="45%" stop-color="#BFDBFE" stop-opacity="0.62"/>
+                            <stop offset="100%" stop-color="#E0F2FE" stop-opacity="0.85"/>
+                        </linearGradient>
+                        <linearGradient id="bpDeckFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#1A3252" stop-opacity="0.75"/>
+                            <stop offset="100%" stop-color="#0B1526" stop-opacity="0.94"/>
+                        </linearGradient>
+                        <linearGradient id="bpLightCyan" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25"/>
+                            <stop offset="55%" stop-color="#BAE6FD" stop-opacity="0.85"/>
+                            <stop offset="100%" stop-color="#F0F9FF" stop-opacity="1"/>
+                        </linearGradient>
+                        <linearGradient id="bpLightGold" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#E5A913" stop-opacity="0.25"/>
+                            <stop offset="60%" stop-color="#FDE68A" stop-opacity="0.88"/>
+                            <stop offset="100%" stop-color="#FFFBEB" stop-opacity="1"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- 1. Technical CAD Drafting Grid, Dimension Ticks & Construction Lines -->
+                    <g stroke="#93C5FD" stroke-opacity="0.2" stroke-width="0.7">
+                        <line x1="220" y1="68" x2="995" y2="68" stroke-dasharray="4 6"/>
+                        <line x1="260" y1="126" x2="995" y2="126" stroke-dasharray="3 7"/>
+                        <line x1="180" y1="268" x2="995" y2="268" stroke-dasharray="6 6"/>
+                        <line x1="498" y1="28" x2="498" y2="275" stroke-dasharray="3 5"/>
+                        <line x1="680" y1="24" x2="680" y2="265" stroke-dasharray="3 6"/>
+                        <line x1="852" y1="24" x2="852" y2="265" stroke-dasharray="3 6"/>
+                        <path d="M492 68 H504 M498 62 V74 M674 68 H686 M680 62 V74 M846 68 H858 M852 62 V74" stroke-opacity="0.38"/>
+                    </g>
+
+                    <!-- 2. Detailed 3D Perspective City Skyline (Background) -->
+                    <g stroke="url(#bpMid)" stroke-width="1">
+                        <rect x="336" y="192" width="38" height="86" stroke-opacity="0.5"/>
+                        <path d="M374 192 L386 198 V278 H374" stroke-opacity="0.4"/>
+                        <path d="M346 192 V278 M355 192 V278 M364 192 V278 M336 212 H374 M336 232 H374 M336 252 H374" stroke-opacity="0.28"/>
+
+                        <rect x="394" y="128" width="46" height="150" stroke-opacity="0.6"/>
+                        <path d="M440 128 L454 136 V278 H440" stroke-opacity="0.45"/>
+                        <path d="M405 128 V278 M417 128 V278 M429 128 V278 M394 148 H440 M394 168 H440 M394 188 H440 M394 208 H440 M394 228 H440 M394 248 H440" stroke-opacity="0.32"/>
+
+                        <rect x="572" y="138" width="44" height="136" stroke-opacity="0.65"/>
+                        <path d="M616 138 L628 144 V274 H616" stroke-opacity="0.45"/>
+                        <path d="M583 138 V274 M594 138 V274 M605 138 V274 M572 158 H616 M572 178 H616 M572 198 H616 M572 218 H616 M572 238 H616" stroke-opacity="0.35"/>
+
+                        <path d="M642 272 V102 Q642 86 662 84 Q682 86 682 102 V272 Z" stroke="url(#bpBright)" stroke-width="1.25" stroke-opacity="0.85"/>
+                        <path d="M682 102 L696 109 V272 H682" stroke-opacity="0.58"/>
+                        <line x1="662" y1="64" x2="662" y2="84" stroke="url(#bpBright)" stroke-width="1.2"/>
+                        <path d="M652 90 V272 M662 85 V272 M672 90 V272 M642 116 H682 M642 136 H682 M642 156 H682 M642 176 H682 M642 196 H682 M642 216 H682 M642 236 H682" stroke-opacity="0.38"/>
+
+                        <rect x="706" y="168" width="54" height="104" stroke="url(#bpBright)" stroke-opacity="0.75"/>
+                        <path d="M760 168 L774 175 V272 H760" stroke-opacity="0.52"/>
+                        <path d="M718 168 V272 M732 168 V272 M746 168 V272 M706 186 H760 M706 204 H760 M706 222 H760 M706 240 H760" stroke-opacity="0.36"/>
+
+                        <path d="M786 270 V86 L838 74 V270 Z" stroke="url(#bpBright)" stroke-width="1.35" stroke-opacity="0.92"/>
+                        <path d="M838 74 L860 85 V270 H838" stroke="url(#bpBright)" stroke-width="1.15" stroke-opacity="0.72"/>
+                        <path d="M799 83 V270 M812 80 V270 M825 77 V270 M849 80 V270" stroke-opacity="0.42"/>
+                        <path d="M786 106 L838 96 M786 126 L838 117 M786 146 L838 138 M786 166 L838 159 M786 186 L838 180 M786 206 L838 201 M786 226 L838 222 M786 246 L838 243" stroke-opacity="0.36"/>
+
+                        <rect x="876" y="128" width="46" height="142" stroke="url(#bpBright)" stroke-opacity="0.8"/>
+                        <path d="M922 128 L938 136 V270 H922" stroke-opacity="0.55"/>
+                        <path d="M888 128 V270 M900 128 V270 M911 128 V270 M876 150 H922 M876 172 H922 M876 194 H922 M876 216 H922 M876 238 H922" stroke-opacity="0.35"/>
+
+                        <rect x="944" y="152" width="52" height="118" stroke="url(#bpBright)" stroke-opacity="0.75"/>
+                        <path d="M958 152 V270 M972 152 V270 M986 152 V270 M944 176 H996 M944 200 H996 M944 224 H996 M944 248 H996" stroke-opacity="0.35"/>
+                    </g>
+
+                    <!-- 3. Cable-Stayed Bridge Pylon & Dense Fanning Stay Cables -->
+                    <g>
+                        <path d="M474 282 L485 116 L494 116 L488 282 Z" fill="url(#bpDeckFill)" stroke="url(#bpBright)" stroke-width="1.6"/>
+                        <path d="M526 282 L515 116 L506 116 L512 282 Z" fill="url(#bpDeckFill)" stroke="url(#bpBright)" stroke-width="1.6"/>
+                        <rect x="484" y="136" width="32" height="11" fill="url(#bpDeckFill)" stroke="url(#bpBright)" stroke-width="1.4"/>
+                        <rect x="480" y="204" width="40" height="10" fill="url(#bpDeckFill)" stroke="url(#bpBright)" stroke-width="1.4"/>
+                        <line x1="487" y1="122" x2="513" y2="122" stroke="url(#bpBright)" stroke-width="1.1"/>
+                        <line x1="477" y1="252" x2="523" y2="252" stroke="url(#bpBright)" stroke-width="1.2"/>
+
+                        <g stroke="url(#bpBright)" stroke-width="0.95" stroke-opacity="0.85">
+                            <line x1="485" y1="124" x2="262" y2="274"/>
+                            <line x1="485" y1="133" x2="285" y2="274"/>
+                            <line x1="484" y1="142" x2="308" y2="274"/>
+                            <line x1="484" y1="151" x2="331" y2="274"/>
+                            <line x1="483" y1="160" x2="354" y2="274"/>
+                            <line x1="483" y1="169" x2="376" y2="274"/>
+                            <line x1="482" y1="178" x2="397" y2="274"/>
+                            <line x1="482" y1="187" x2="417" y2="274"/>
+                            <line x1="481" y1="196" x2="436" y2="274"/>
+                            <line x1="481" y1="205" x2="454" y2="274"/>
+                            <line x1="480" y1="214" x2="468" y2="274"/>
+                        </g>
+
+                        <g stroke="url(#bpBright)" stroke-width="0.95" stroke-opacity="0.9">
+                            <line x1="515" y1="124" x2="742" y2="270"/>
+                            <line x1="515" y1="133" x2="718" y2="270"/>
+                            <line x1="516" y1="142" x2="694" y2="270"/>
+                            <line x1="516" y1="151" x2="670" y2="270"/>
+                            <line x1="517" y1="160" x2="646" y2="270"/>
+                            <line x1="517" y1="169" x2="623" y2="270"/>
+                            <line x1="518" y1="178" x2="601" y2="270"/>
+                            <line x1="518" y1="187" x2="580" y2="270"/>
+                            <line x1="519" y1="196" x2="561" y2="270"/>
+                            <line x1="519" y1="205" x2="544" y2="270"/>
+                            <line x1="520" y1="214" x2="531" y2="270"/>
+                        </g>
+
+                        <path d="M220 275 L1000 264" stroke="url(#bpBright)" stroke-width="1.8"/>
+                        <path d="M220 282 L1000 272" stroke="url(#bpMid)" stroke-width="1.2"/>
+                    </g>
+
+                    <!-- 4. Elevated Metro Viaduct / Midground Flyover with Piers & Box-Girder -->
+                    <g>
+                        <g fill="url(#bpDeckFill)" stroke="url(#bpBright)" stroke-width="1.25">
+                            <path d="M298 318 L328 318 L322 330 L322 440 L304 440 L304 330 Z"/>
+                            <path d="M448 312 L482 312 L475 325 L475 432 L455 432 L455 325 Z"/>
+                            <path d="M598 306 L634 306 L626 320 L626 392 L606 392 L606 320 Z"/>
+                            <path d="M744 301 L778 301 L770 314 L770 356 L752 356 L752 314 Z"/>
+                            <path d="M882 296 L914 296 L906 308 L906 336 L890 336 L890 308 Z"/>
+                        </g>
+
+                        <path d="M120 310 Q 540 286, 1000 278 L 1000 299 Q 540 308, 120 334 Z" fill="url(#bpDeckFill)" stroke="url(#bpBright)" stroke-width="1.8"/>
+                        <path d="M120 304 Q 540 280, 1000 272" stroke="url(#bpBright)" stroke-width="1.2" stroke-opacity="0.88"/>
+                        <path d="M120 322 Q 540 298, 1000 290" stroke="url(#bpMid)" stroke-width="1.1"/>
+                        <path d="M220 300 V306 M270 297 V303 M320 294 V300 M370 292 V298 M420 289 V295 M470 287 V293 M520 285 V291 M570 283 V289 M620 281 V287 M670 279 V285 M720 277 V283 M770 276 V282 M820 275 V281 M870 274 V280 M920 273 V279" stroke="url(#bpBright)" stroke-width="0.9" stroke-opacity="0.65"/>
+                    </g>
+
+                    <!-- 5. Sweeping Multi-Lane Curved Highway -->
+                    <g>
+                        <path d="M225 580 C 425 456, 685 344, 1000 298 L 1000 356 C 755 398, 575 486, 468 580 Z" fill="url(#bpDeckFill)"/>
+                        <path d="M206 580 C 410 452, 678 338, 1000 292" stroke="url(#bpBright)" stroke-width="2.3"/>
+                        <path d="M224 580 C 424 456, 685 344, 1000 298" stroke="url(#bpBright)" stroke-width="1.4" stroke-opacity="0.88"/>
+                        <path d="M240 580 C 438 460, 692 350, 1000 304" stroke="url(#bpMid)" stroke-width="1" stroke-opacity="0.72"/>
+
+                        <path d="M294 580 C 482 466, 720 362, 1000 314" stroke="#F8FAFC" stroke-opacity="0.85" stroke-width="1.35" stroke-dasharray="16 14"/>
+                        <path d="M352 580 C 526 472, 746 374, 1000 326" stroke="#EFF6FF" stroke-opacity="0.96" stroke-width="1.6"/>
+                        <path d="M362 580 C 534 475, 752 378, 1000 330" stroke="#BFDBFE" stroke-opacity="0.75" stroke-width="1.1"/>
+                        <path d="M418 580 C 574 482, 774 392, 1000 342" stroke="#F8FAFC" stroke-opacity="0.85" stroke-width="1.35" stroke-dasharray="16 14"/>
+
+                        <path d="M468 580 C 608 492, 796 406, 1000 356" stroke="url(#bpBright)" stroke-width="2.1"/>
+                        <path d="M484 580 C 620 496, 804 412, 1000 362" stroke="url(#bpMid)" stroke-width="1.15" stroke-opacity="0.75"/>
+
+                        <g stroke="#BFDBFE" stroke-opacity="0.24" stroke-width="0.9">
+                            <line x1="280" y1="538" x2="528" y2="546"/>
+                            <line x1="392" y1="478" x2="626" y2="488"/>
+                            <line x1="518" y1="422" x2="730" y2="434"/>
+                            <line x1="656" y1="374" x2="844" y2="388"/>
+                            <line x1="806" y1="334" x2="964" y2="348"/>
+                        </g>
+                    </g>
+
+                    <!-- 6. Foreground Sweeping Curved Elevated Metro / Flyover Ramp -->
+                    <g>
+                        <g fill="url(#bpDeckFill)" stroke="url(#bpMid)" stroke-width="1.2">
+                            <path d="M680 486 L706 486 L702 580 L684 580 Z"/>
+                            <path d="M846 436 L872 436 L868 580 L850 580 Z"/>
+                        </g>
+
+                        <path d="M582 580 C 656 472, 794 378, 1000 328 L 1000 434 C 892 468, 826 520, 798 580 Z" fill="url(#bpDeckFill)"/>
+                        <path d="M568 580 C 644 468, 788 372, 1000 322" stroke="url(#bpBright)" stroke-width="2.5"/>
+                        <path d="M586 580 C 660 472, 798 378, 1000 328" stroke="url(#bpBright)" stroke-width="1.5"/>
+                        <path d="M604 580 C 674 478, 808 386, 1000 336" stroke="url(#bpMid)" stroke-width="1.1"/>
+
+                        <path d="M636 580 C 700 486, 826 398, 1000 350" stroke="#EFF6FF" stroke-opacity="0.9" stroke-width="1.45"/>
+                        <path d="M662 580 C 722 492, 840 408, 1000 362" stroke="#EFF6FF" stroke-opacity="0.9" stroke-width="1.45"/>
+                        <path d="M704 580 C 756 502, 862 424, 1000 380" stroke="#DBEAFE" stroke-opacity="0.88" stroke-width="1.4"/>
+                        <path d="M734 580 C 782 508, 880 436, 1000 394" stroke="#DBEAFE" stroke-opacity="0.88" stroke-width="1.4"/>
+
+                        <path d="M649 580 C 711 489, 833 403, 1000 356" stroke="#EFF6FF" stroke-opacity="0.6" stroke-width="14" stroke-dasharray="2.5 8"/>
+                        <path d="M719 580 C 769 505, 871 430, 1000 387" stroke="#DBEAFE" stroke-opacity="0.52" stroke-width="14" stroke-dasharray="2.5 8"/>
+
+                        <path d="M776 580 C 814 518, 892 458, 1000 416" stroke="url(#bpBright)" stroke-width="2.4"/>
+                        <path d="M798 580 C 832 524, 902 470, 1000 432" stroke="url(#bpBright)" stroke-width="1.6"/>
+                        <path d="M816 580 C 848 530, 914 480, 1000 446" stroke="url(#bpMid)" stroke-width="1.1" stroke-opacity="0.75"/>
+                    </g>
+
+                    <!-- 7. One-Shot Tapered Comet-Tail Light Runners (Bottom -> Top-Right, Triggered on Load & Home Click) -->
+                    <g id="blueprint-light-runners" fill="none">
+                        <!-- Sweeping Multi-Lane Curved Highway (5 Tapered Beams) -->
+                        <path pathLength="100" d="M206 580 C 410 452, 678 338, 1000 292" stroke="url(#bpLightCyan)" stroke-width="3.6" class="bp-light-tail" style="--bp-dur: 2.65s; --bp-delay: 0.05s;"/>
+                        <path pathLength="100" d="M206 580 C 410 452, 678 338, 1000 292" stroke="#FFFFFF" stroke-width="2.0" class="bp-light-head" style="--bp-dur: 2.65s; --bp-delay: 0.05s;"/>
+
+                        <path pathLength="100" d="M294 580 C 482 466, 720 362, 1000 314" stroke="url(#bpLightGold)" stroke-width="3.2" class="bp-light-tail" style="--bp-dur: 2.80s; --bp-delay: 0.16s;"/>
+                        <path pathLength="100" d="M294 580 C 482 466, 720 362, 1000 314" stroke="#FEF9C3" stroke-width="1.8" class="bp-light-head" style="--bp-dur: 2.80s; --bp-delay: 0.16s;"/>
+
+                        <path pathLength="100" d="M352 580 C 526 472, 746 374, 1000 326" stroke="url(#bpLightCyan)" stroke-width="3.8" class="bp-light-tail" style="--bp-dur: 2.60s; --bp-delay: 0.26s;"/>
+                        <path pathLength="100" d="M352 580 C 526 472, 746 374, 1000 326" stroke="#FFFFFF" stroke-width="2.1" class="bp-light-head" style="--bp-dur: 2.60s; --bp-delay: 0.26s;"/>
+
+                        <path pathLength="100" d="M418 580 C 574 482, 774 392, 1000 342" stroke="url(#bpLightCyan)" stroke-width="3.0" class="bp-light-tail" style="--bp-dur: 2.75s; --bp-delay: 0.36s;"/>
+                        <path pathLength="100" d="M418 580 C 574 482, 774 392, 1000 342" stroke="#FFFFFF" stroke-width="1.7" class="bp-light-head" style="--bp-dur: 2.75s; --bp-delay: 0.36s;"/>
+
+                        <path pathLength="100" d="M468 580 C 608 492, 796 406, 1000 356" stroke="url(#bpLightGold)" stroke-width="3.4" class="bp-light-tail" style="--bp-dur: 2.65s; --bp-delay: 0.44s;"/>
+                        <path pathLength="100" d="M468 580 C 608 492, 796 406, 1000 356" stroke="#FEF9C3" stroke-width="1.9" class="bp-light-head" style="--bp-dur: 2.65s; --bp-delay: 0.44s;"/>
+
+                        <!-- Foreground Sweeping Curved Metro / Flyover Ramp (4 Tapered Beams) -->
+                        <path pathLength="100" d="M568 580 C 644 468, 788 372, 1000 322" stroke="url(#bpLightCyan)" stroke-width="3.6" class="bp-light-tail" style="--bp-dur: 2.55s; --bp-delay: 0.22s;"/>
+                        <path pathLength="100" d="M568 580 C 644 468, 788 372, 1000 322" stroke="#FFFFFF" stroke-width="2.0" class="bp-light-head" style="--bp-dur: 2.55s; --bp-delay: 0.22s;"/>
+
+                        <path pathLength="100" d="M636 580 C 700 486, 826 398, 1000 350" stroke="url(#bpLightGold)" stroke-width="3.2" class="bp-light-tail" style="--bp-dur: 2.60s; --bp-delay: 0.34s;"/>
+                        <path pathLength="100" d="M636 580 C 700 486, 826 398, 1000 350" stroke="#FEF9C3" stroke-width="1.8" class="bp-light-head" style="--bp-dur: 2.60s; --bp-delay: 0.34s;"/>
+
+                        <path pathLength="100" d="M704 580 C 756 502, 862 424, 1000 380" stroke="url(#bpLightCyan)" stroke-width="3.2" class="bp-light-tail" style="--bp-dur: 2.45s; --bp-delay: 0.46s;"/>
+                        <path pathLength="100" d="M704 580 C 756 502, 862 424, 1000 380" stroke="#FFFFFF" stroke-width="1.8" class="bp-light-head" style="--bp-dur: 2.45s; --bp-delay: 0.46s;"/>
+
+                        <path pathLength="100" d="M776 580 C 814 518, 892 458, 1000 416" stroke="url(#bpLightCyan)" stroke-width="3.4" class="bp-light-tail" style="--bp-dur: 2.38s; --bp-delay: 0.55s;"/>
+                        <path pathLength="100" d="M776 580 C 814 518, 892 458, 1000 416" stroke="#FFFFFF" stroke-width="1.9" class="bp-light-head" style="--bp-dur: 2.38s; --bp-delay: 0.55s;"/>
+
+                        <!-- Elevated Metro Viaduct & Bridge Deck (2 Tapered Beams) -->
+                        <path pathLength="100" d="M120 304 Q 540 280, 1000 272" stroke="url(#bpLightCyan)" stroke-width="3.2" class="bp-light-tail" style="--bp-dur: 2.85s; --bp-delay: 0.32s;"/>
+                        <path pathLength="100" d="M120 304 Q 540 280, 1000 272" stroke="#FFFFFF" stroke-width="1.8" class="bp-light-head" style="--bp-dur: 2.85s; --bp-delay: 0.32s;"/>
+
+                        <path pathLength="100" d="M220 275 L 1000 264" stroke="url(#bpLightGold)" stroke-width="2.8" class="bp-light-tail" style="--bp-dur: 2.75s; --bp-delay: 0.48s;"/>
+                        <path pathLength="100" d="M220 275 L 1000 264" stroke="#FEF9C3" stroke-width="1.6" class="bp-light-head" style="--bp-dur: 2.75s; --bp-delay: 0.48s;"/>
+
+                        <!-- Left-Side Stay Cables Rising to Pylon (3 Tapered Beams) -->
+                        <path pathLength="100" d="M262 274 L 485 124" stroke="url(#bpLightCyan)" stroke-width="2.6" class="bp-light-tail" style="--bp-dur: 2.35s; --bp-delay: 0.54s;"/>
+                        <path pathLength="100" d="M262 274 L 485 124" stroke="#FFFFFF" stroke-width="1.5" class="bp-light-head" style="--bp-dur: 2.35s; --bp-delay: 0.54s;"/>
+
+                        <path pathLength="100" d="M331 274 L 484 151" stroke="url(#bpLightGold)" stroke-width="2.4" class="bp-light-tail" style="--bp-dur: 2.30s; --bp-delay: 0.64s;"/>
+                        <path pathLength="100" d="M331 274 L 484 151" stroke="#FEF9C3" stroke-width="1.4" class="bp-light-head" style="--bp-dur: 2.30s; --bp-delay: 0.64s;"/>
+
+                        <path pathLength="100" d="M397 274 L 482 178" stroke="url(#bpLightCyan)" stroke-width="2.4" class="bp-light-tail" style="--bp-dur: 2.30s; --bp-delay: 0.72s;"/>
+                        <path pathLength="100" d="M397 274 L 482 178" stroke="#FFFFFF" stroke-width="1.4" class="bp-light-head" style="--bp-dur: 2.30s; --bp-delay: 0.72s;"/>
+
+                        <!-- Right-Side Stay Cables Bridging Upper-Right Span Continuity (3 Tapered Beams) -->
+                        <path pathLength="100" d="M601 270 L 518 178" stroke="url(#bpLightCyan)" stroke-width="2.4" class="bp-light-tail" style="--bp-dur: 2.30s; --bp-delay: 0.62s;"/>
+                        <path pathLength="100" d="M601 270 L 518 178" stroke="#FFFFFF" stroke-width="1.4" class="bp-light-head" style="--bp-dur: 2.30s; --bp-delay: 0.62s;"/>
+
+                        <path pathLength="100" d="M670 270 L 516 151" stroke="url(#bpLightGold)" stroke-width="2.4" class="bp-light-tail" style="--bp-dur: 2.35s; --bp-delay: 0.70s;"/>
+                        <path pathLength="100" d="M670 270 L 516 151" stroke="#FEF9C3" stroke-width="1.4" class="bp-light-head" style="--bp-dur: 2.35s; --bp-delay: 0.70s;"/>
+
+                        <path pathLength="100" d="M742 270 L 515 124" stroke="url(#bpLightCyan)" stroke-width="2.6" class="bp-light-tail" style="--bp-dur: 2.40s; --bp-delay: 0.78s;"/>
+                        <path pathLength="100" d="M742 270 L 515 124" stroke="#FFFFFF" stroke-width="1.5" class="bp-light-head" style="--bp-dur: 2.40s; --bp-delay: 0.78s;"/>
+
+                        <!-- Upper-Right Skyline Edges Rising Upward (3 Tapered Beams) -->
+                        <path pathLength="100" d="M642 272 V 102 Q 642 86 662 84" stroke="url(#bpLightCyan)" stroke-width="2.6" class="bp-light-tail" style="--bp-dur: 2.35s; --bp-delay: 0.74s;"/>
+                        <path pathLength="100" d="M642 272 V 102 Q 642 86 662 84" stroke="#FFFFFF" stroke-width="1.5" class="bp-light-head" style="--bp-dur: 2.35s; --bp-delay: 0.74s;"/>
+
+                        <path pathLength="100" d="M786 270 V 86 L 838 74" stroke="url(#bpLightGold)" stroke-width="2.8" class="bp-light-tail" style="--bp-dur: 2.45s; --bp-delay: 0.82s;"/>
+                        <path pathLength="100" d="M786 270 V 86 L 838 74" stroke="#FEF9C3" stroke-width="1.6" class="bp-light-head" style="--bp-dur: 2.45s; --bp-delay: 0.82s;"/>
+
+                        <path pathLength="100" d="M876 270 V 128 H 922" stroke="url(#bpLightCyan)" stroke-width="2.5" class="bp-light-tail" style="--bp-dur: 2.30s; --bp-delay: 0.90s;"/>
+                        <path pathLength="100" d="M876 270 V 128 H 922" stroke="#FFFFFF" stroke-width="1.4" class="bp-light-head" style="--bp-dur: 2.30s; --bp-delay: 0.90s;"/>
+                    </g>
                 </svg>
             </div>
 
+            <!-- Readability Scrim (Protects Headline Contrast on Mobile & Tablet) -->
+            <div class="hero-mobile-scrim absolute inset-0 pointer-events-none z-[1]" aria-hidden="true"></div>
+
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 sm:pt-24 sm:pb-20">
                 <div class="max-w-3xl">
-                    <!-- Brand Crest Pill with Inline SVG AE Logo -->
-                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-lg bg-navy-deep/90 border border-gold-bright/45 shadow-md mb-7">
-                        <svg class="w-8 h-6 flex-shrink-0" viewBox="0 0 130 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#4B7BB6"/>
-                            <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#3D699E"/>
-                            <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#121F36" stroke="#121F36" stroke-width="3.5" stroke-linejoin="round"/>
-                            <path d="M5 81 C28 43, 68 24, 125 32.5 C81 29.5, 45 48, 22 81 Z" fill="#F5BE18"/>
-                        </svg>
-                        <span class="text-xs sm:text-sm font-serif font-semibold tracking-wider text-gold-bright">
-                            M/s Anika Enterprise &bull; Civil Engineers &amp; Contractors
+                    <!-- High-Trust B2B Credential Badge -->
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-navy-header/90 border border-gold-bright/45 shadow-md mb-7">
+                        <span class="w-2 h-2 rounded-full bg-gold-primary flex-shrink-0" aria-hidden="true"></span>
+                        <span class="text-[11px] sm:text-xs font-bold tracking-[0.14em] uppercase text-gold-bright">
+                            Mumbai Metro Corridor Partner &bull; Est. March 2022 &bull; GST Registered
                         </span>
                     </div>
 
@@ -342,35 +739,35 @@
 
                     <!-- Action Buttons -->
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-                        <a href="#projects" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-lg bg-gold-primary text-navy-deep font-bold text-sm uppercase tracking-wider shadow-gold-btn hover:bg-gold-hover transition-all duration-200">
+                        <a href="#projects" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-lg bg-gold-primary text-navy-header font-bold text-sm uppercase tracking-wider shadow-gold-btn hover:bg-gold-hover transition-all duration-200">
                             <span>View Ongoing &amp; Completed Works</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-lg border-2 border-gold-bright/80 bg-navy-deep/60 text-white font-semibold text-sm uppercase tracking-wider hover:bg-navy-deep hover:border-gold-bright transition-all duration-200">
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-lg border-2 border-gold-bright/80 bg-navy-header/70 text-white font-semibold text-sm uppercase tracking-wider hover:bg-navy-header hover:border-gold-bright transition-all duration-200">
                             <span>Request a Quotation</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- 4-Metric Executive Stat Strip -->
+                <!-- 4-Metric Executive Stat Strip (Tabular Engineering Numerals) -->
                 <div class="mt-14 sm:mt-16 pt-8 border-t border-white/20">
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-                        <div class="rounded-xl bg-navy-deep/75 border border-gold-bright/30 p-4 sm:p-5">
-                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright">March 2022</p>
+                        <div class="rounded-xl bg-navy-header/85 border border-gold-bright/30 p-4 sm:p-5">
+                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright tabular-eng">March 2022</p>
                             <p class="text-xs sm:text-sm text-slate-100 font-medium mt-1">Incorporated Proprietorship</p>
                         </div>
-                        <div class="rounded-xl bg-navy-deep/75 border border-gold-bright/30 p-4 sm:p-5">
-                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright">&#8377;101.7+ Cr</p>
+                        <div class="rounded-xl bg-navy-header/85 border border-gold-bright/30 p-4 sm:p-5">
+                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright tabular-eng">&#8377;101.7+ Cr</p>
                             <p class="text-xs sm:text-sm text-slate-100 font-medium mt-1">Active &amp; Executed Portfolio</p>
                         </div>
-                        <div class="rounded-xl bg-navy-deep/75 border border-gold-bright/30 p-4 sm:p-5">
-                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright">25+ Yrs</p>
+                        <div class="rounded-xl bg-navy-header/85 border border-gold-bright/30 p-4 sm:p-5">
+                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright tabular-eng">25+ Yrs</p>
                             <p class="text-xs sm:text-sm text-slate-100 font-medium mt-1">Leadership Civil Experience</p>
                         </div>
-                        <div class="rounded-xl bg-navy-deep/75 border border-gold-bright/30 p-4 sm:p-5">
-                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright">7 Major Works</p>
+                        <div class="rounded-xl bg-navy-header/85 border border-gold-bright/30 p-4 sm:p-5">
+                            <p class="font-serif font-bold text-2xl sm:text-3xl text-gold-bright tabular-eng">7 Major Works</p>
                             <p class="text-xs sm:text-sm text-slate-100 font-medium mt-1">5 Ongoing &bull; 2 Completed</p>
                         </div>
                     </div>
@@ -379,7 +776,7 @@
         </section>
 
         <!-- =========================================================
-             3. ABOUT US / COMPANY PROFILE (ON RICH CREME #FAF4E6)
+             3. ABOUT US / COMPANY PROFILE (ARCHITECTURAL ALABASTER #F8F6F1)
         ========================================================== -->
         <section id="about" class="py-20 sm:py-24 bg-creme-base">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -409,19 +806,19 @@
                         <!-- 4 Capability Highlights -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="flex items-center gap-3 p-3.5 rounded-xl bg-creme-light border border-creme-border shadow-sm">
-                                <span class="w-2.5 h-2.5 rounded-full bg-gold-metallic flex-shrink-0"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-gold-primary flex-shrink-0"></span>
                                 <span class="text-sm font-semibold text-ink-heading">Cement Concrete (CC) &amp; PQC Roads</span>
                             </div>
                             <div class="flex items-center gap-3 p-3.5 rounded-xl bg-creme-light border border-creme-border shadow-sm">
-                                <span class="w-2.5 h-2.5 rounded-full bg-gold-metallic flex-shrink-0"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-gold-primary flex-shrink-0"></span>
                                 <span class="text-sm font-semibold text-ink-heading">Mumbai Metro Corridor Civil Works</span>
                             </div>
                             <div class="flex items-center gap-3 p-3.5 rounded-xl bg-creme-light border border-creme-border shadow-sm">
-                                <span class="w-2.5 h-2.5 rounded-full bg-gold-metallic flex-shrink-0"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-gold-primary flex-shrink-0"></span>
                                 <span class="text-sm font-semibold text-ink-heading">Multimodal Integration &amp; Drains</span>
                             </div>
                             <div class="flex items-center gap-3 p-3.5 rounded-xl bg-creme-light border border-creme-border shadow-sm">
-                                <span class="w-2.5 h-2.5 rounded-full bg-gold-metallic flex-shrink-0"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-gold-primary flex-shrink-0"></span>
                                 <span class="text-sm font-semibold text-ink-heading">Mastic Asphalt Monsoon Maintenance</span>
                             </div>
                         </div>
@@ -431,13 +828,13 @@
                     <div class="lg:col-span-5 reveal">
                         <div class="rounded-2xl bg-creme-light border border-creme-border shadow-creme-card overflow-hidden">
                             <!-- Official Letterhead Header Banner -->
-                            <div class="relative letterhead-gradient px-7 pt-7 pb-6 border-b-2 border-navy-deep overflow-hidden">
+                            <div class="relative letterhead-gradient px-7 pt-7 pb-6 border-b-2 border-navy-header overflow-hidden">
                                 <div class="bokeh-layer" aria-hidden="true"></div>
                                 <div class="relative z-10 flex items-center gap-4">
                                     <svg class="w-16 h-12 flex-shrink-0" viewBox="0 0 130 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                        <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#4B7BB6"/>
-                                        <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#3D699E"/>
-                                        <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#121F36" stroke="#121F36" stroke-width="3.5" stroke-linejoin="round"/>
+                                        <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#5B91CE"/>
+                                        <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#487AB5"/>
+                                        <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#0F1D33" stroke="#0F1D33" stroke-width="3.5" stroke-linejoin="round"/>
                                         <path d="M5 81 C28 43, 68 24, 125 32.5 C81 29.5, 45 48, 22 81 Z" fill="#F5BE18"/>
                                     </svg>
                                     <div>
@@ -449,15 +846,15 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="relative z-10 mt-4 inline-block px-3.5 py-1 bg-navy-deep text-gold-bright font-serif font-semibold text-xs tracking-wide rounded border border-gold-bright/35">
+                                <div class="relative z-10 mt-4 inline-block px-3.5 py-1 bg-navy-header text-gold-bright font-serif font-semibold text-xs tracking-wide rounded border border-gold-bright/35">
                                     Civil Engineers &amp; Contractors
                                 </div>
                             </div>
 
-                            <!-- Card Body on Warm Ivory -->
+                            <!-- Card Body on Pure Warm White -->
                             <div class="px-7 py-7 space-y-4">
                                 <div class="pl-4 border-l-2 border-gold-metallic">
-                                    <p class="text-[11px] font-bold uppercase tracking-widest text-gold-dark">Registered Office</p>
+                                    <p class="text-xs font-bold uppercase tracking-widest text-gold-dark">Registered Office</p>
                                     <p class="text-sm text-ink-heading font-medium mt-1 leading-relaxed">
                                         104/ Madhav Apartment, Shreenagar Colony,<br>
                                         M.G. Road, Goregaon (W), Mumbai - 400 104
@@ -466,27 +863,27 @@
 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div class="pl-4 border-l-2 border-gold-metallic">
-                                        <p class="text-[11px] font-bold uppercase tracking-widest text-gold-dark">Contact No.</p>
-                                        <a href="tel:+919820287245" class="inline-block text-sm font-semibold text-ink-heading hover:text-gold-dark mt-1 transition-colors">
+                                        <p class="text-xs font-bold uppercase tracking-widest text-gold-dark">Contact No.</p>
+                                        <a href="tel:+919820287245" class="inline-block text-sm font-semibold text-ink-heading hover:text-gold-dark mt-1 transition-colors tabular-eng">
                                             +91 98202 87245
                                         </a>
                                     </div>
                                     <div class="pl-4 border-l-2 border-gold-metallic">
-                                        <p class="text-[11px] font-bold uppercase tracking-widest text-gold-dark">GST Reg. No.</p>
-                                        <p class="text-sm font-mono font-semibold text-ink-heading mt-1">
+                                        <p class="text-xs font-bold uppercase tracking-widest text-gold-dark">GST Reg. No.</p>
+                                        <p class="text-sm font-mono font-semibold text-ink-heading mt-1 tabular-eng">
                                             27AKCPS7530D1Z7
                                         </p>
                                     </div>
                                 </div>
 
                                 <div class="pl-4 border-l-2 border-gold-metallic">
-                                    <p class="text-[11px] font-bold uppercase tracking-widest text-gold-dark">Official Email</p>
-                                    <a href="mailto:anika.ent@yahoo.com" class="inline-block text-sm font-semibold text-navy-deep hover:text-gold-dark underline decoration-gold-metallic/70 underline-offset-4 mt-1 transition-colors">
+                                    <p class="text-xs font-bold uppercase tracking-widest text-gold-dark">Official Email</p>
+                                    <a href="mailto:anika.ent@yahoo.com" class="inline-block text-sm font-semibold text-navy-header hover:text-gold-dark underline decoration-gold-metallic/70 underline-offset-4 mt-1 transition-colors">
                                         anika.ent@yahoo.com
                                     </a>
                                 </div>
 
-                                <!-- Double Metallic Gold Footer Rule -->
+                                <!-- Double Brushed Brass Footer Rule -->
                                 <div class="pt-2">
                                     <div class="h-[2px] w-full bg-gradient-to-r from-gold-metallic via-gold-primary to-gold-metallic rounded-full"></div>
                                     <div class="h-[1px] w-full bg-gradient-to-r from-gold-metallic/60 via-gold-primary/80 to-gold-metallic/60 mt-1 rounded-full"></div>
@@ -500,7 +897,7 @@
         </section>
 
         <!-- =========================================================
-             4. CORE CIVIL ENGINEERING SERVICES (ON WARM CREME #F3EBD8)
+             4. CORE CIVIL ENGINEERING SERVICES (WARM LIMESTONE #EFECE4)
         ========================================================== -->
         <section id="services" class="py-20 sm:py-24 bg-creme-deep border-y border-creme-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -522,18 +919,18 @@
                     </p>
                 </div>
 
-                <!-- 3x2 Grid of 6 Uniform Warm-Ivory Cards (Zero Background Photos) -->
+                <!-- 3x2 Grid of 6 Uniform Cards (Flagship CC Roads with Brushed Brass Border & Sovereign Wash) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
 
                     <!-- Service 1: Cement Concrete (CC) Roads (Flagship Core Specialty) -->
-                    <article class="service-card featured-service reveal bg-creme-light rounded-2xl p-7 sm:p-8 border border-gold-metallic/70 shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col">
+                    <article class="service-card featured-service reveal bg-creme-goldtint rounded-2xl p-7 sm:p-8 border-2 border-gold-metallic shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col">
                         <div class="flex items-start justify-between gap-3 mb-6">
-                            <div class="w-12 h-12 rounded-xl bg-navy-deep text-gold-bright flex items-center justify-center shadow-sm flex-shrink-0">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="w-12 h-12 rounded-xl bg-navy-header text-gold-bright flex items-center justify-center shadow-sm flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 19L9 5M20 19L15 5M7.5 14h9M9.5 9h5M6 19h12"/>
                                 </svg>
                             </div>
-                            <span class="px-2.5 py-1 rounded-full bg-gold-primary/25 border border-gold-metallic/60 text-[10px] font-bold uppercase tracking-wider text-navy-deep">
+                            <span class="px-2.5 py-1 rounded-full bg-gold-primary/20 border border-gold-metallic text-[11px] font-bold uppercase tracking-wider text-navy-header">
                                 Core Specialty
                             </span>
                         </div>
@@ -543,16 +940,16 @@
                         <p class="text-sm text-ink-body leading-relaxed flex-grow">
                             Full-depth rigid pavement construction for arterial roads, service roads, slip roads, and C.C. passage side strips — covering GSB, DLC sub-base, M30/M40 PQC, dowel/tie bars, groove cutting, and curing.
                         </p>
-                        <div class="mt-6 pt-4 border-t border-creme-border/80 flex items-center justify-between text-xs font-bold text-gold-dark uppercase tracking-wider">
+                        <div class="mt-6 pt-4 border-t border-gold-metallic/30 flex items-center justify-between text-xs font-bold text-gold-dark uppercase tracking-wider">
                             <span>Rigid Pavement</span>
-                            <span class="text-navy-steel font-mono">01</span>
+                            <span class="text-navy-base font-mono tabular-eng">01</span>
                         </div>
                     </article>
 
                     <!-- Service 2: Asphalt & Bituminous Roads -->
                     <article class="service-card reveal bg-creme-light rounded-2xl p-7 sm:p-8 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col">
-                        <div class="w-12 h-12 rounded-xl bg-navy-deep text-gold-bright flex items-center justify-center mb-6 shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-12 h-12 rounded-xl bg-navy-header text-gold-bright flex items-center justify-center mb-6 shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 20L10 4M18 20L14 4M12 7v2m0 4v2m0 4v1"/>
                             </svg>
                         </div>
@@ -564,14 +961,14 @@
                         </p>
                         <div class="mt-6 pt-4 border-t border-creme-border/80 flex items-center justify-between text-xs font-bold text-gold-dark uppercase tracking-wider">
                             <span>Flexible Pavement</span>
-                            <span class="text-navy-steel font-mono">02</span>
+                            <span class="text-navy-base font-mono tabular-eng">02</span>
                         </div>
                     </article>
 
                     <!-- Service 3: Storm Water Drains, Nallas & Culverts -->
                     <article class="service-card reveal bg-creme-light rounded-2xl p-7 sm:p-8 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col">
-                        <div class="w-12 h-12 rounded-xl bg-navy-deep text-gold-bright flex items-center justify-center mb-6 shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-12 h-12 rounded-xl bg-navy-header text-gold-bright flex items-center justify-center mb-6 shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 7h16M4 17h16M7 7v10M12 7v10M17 7v10"/>
                             </svg>
                         </div>
@@ -583,14 +980,14 @@
                         </p>
                         <div class="mt-6 pt-4 border-t border-creme-border/80 flex items-center justify-between text-xs font-bold text-gold-dark uppercase tracking-wider">
                             <span>Drainage Works</span>
-                            <span class="text-navy-steel font-mono">03</span>
+                            <span class="text-navy-base font-mono tabular-eng">03</span>
                         </div>
                     </article>
 
                     <!-- Service 4: Footpaths, Paver Blocks & Multimodal Integration -->
                     <article class="service-card reveal bg-creme-light rounded-2xl p-7 sm:p-8 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col">
-                        <div class="w-12 h-12 rounded-xl bg-navy-deep text-gold-bright flex items-center justify-center mb-6 shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-12 h-12 rounded-xl bg-navy-header text-gold-bright flex items-center justify-center mb-6 shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 5h7v6H4V5zm9 0h7v6h-7V5zM4 13h4v6H4v-6zm6 0h10v6H10v-6z"/>
                             </svg>
                         </div>
@@ -602,14 +999,14 @@
                         </p>
                         <div class="mt-6 pt-4 border-t border-creme-border/80 flex items-center justify-between text-xs font-bold text-gold-dark uppercase tracking-wider">
                             <span>Urban Transit</span>
-                            <span class="text-navy-steel font-mono">04</span>
+                            <span class="text-navy-base font-mono tabular-eng">04</span>
                         </div>
                     </article>
 
                     <!-- Service 5: Retaining Walls, RE Panels & Flyover Approaches -->
                     <article class="service-card reveal bg-creme-light rounded-2xl p-7 sm:p-8 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col">
-                        <div class="w-12 h-12 rounded-xl bg-navy-deep text-gold-bright flex items-center justify-center mb-6 shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-12 h-12 rounded-xl bg-navy-header text-gold-bright flex items-center justify-center mb-6 shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 19h18M4 19l4-9h8l4 9M8 10V6h8v4"/>
                             </svg>
                         </div>
@@ -621,14 +1018,14 @@
                         </p>
                         <div class="mt-6 pt-4 border-t border-creme-border/80 flex items-center justify-between text-xs font-bold text-gold-dark uppercase tracking-wider">
                             <span>Structural Civil</span>
-                            <span class="text-navy-steel font-mono">05</span>
+                            <span class="text-navy-base font-mono tabular-eng">05</span>
                         </div>
                     </article>
 
                     <!-- Service 6: Monsoon Maintenance (Mastic Asphalt) & Traffic Diversion -->
                     <article class="service-card reveal bg-creme-light rounded-2xl p-7 sm:p-8 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col">
-                        <div class="w-12 h-12 rounded-xl bg-navy-deep text-gold-bright flex items-center justify-center mb-6 shadow-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-12 h-12 rounded-xl bg-navy-header text-gold-bright flex items-center justify-center mb-6 shadow-sm">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3l9 9-9 9-9-9 9-9zm0 5v5m0 3h.01"/>
                             </svg>
                         </div>
@@ -640,7 +1037,7 @@
                         </p>
                         <div class="mt-6 pt-4 border-t border-creme-border/80 flex items-center justify-between text-xs font-bold text-gold-dark uppercase tracking-wider">
                             <span>Road Maintenance</span>
-                            <span class="text-navy-steel font-mono">06</span>
+                            <span class="text-navy-base font-mono tabular-eng">06</span>
                         </div>
                     </article>
 
@@ -649,7 +1046,7 @@
         </section>
 
         <!-- =========================================================
-             5. PROJECTS PORTFOLIO: ONGOING (5) & COMPLETED (2) (#FAF4E6)
+             5. PROJECTS PORTFOLIO: ONGOING (5) & COMPLETED (2) (#F8F6F1)
         ========================================================== -->
         <section id="projects" class="py-20 sm:py-24 bg-creme-base">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -667,66 +1064,68 @@
                             Ongoing &amp; Completed Works
                         </h2>
                         <p class="text-ink-body text-sm sm:text-base mt-3 leading-relaxed">
-                            Over &#8377;101.70 Crores in major road, junction, flyover approach, and multimodal integration works across Mumbai Metro Lines 06, 09, and 2B.
+                            Over <span class="tabular-eng font-semibold text-ink-heading">&#8377;101.70 Crores</span> in major road, junction, flyover approach, and multimodal integration works across Mumbai Metro Lines 06, 09, and 2B.
                         </p>
                     </div>
 
-                    <!-- Interactive Filter Buttons -->
+                    <!-- Accessible Interactive Filter Buttons -->
                     <div class="flex flex-wrap items-center gap-2.5" role="tablist" aria-label="Filter projects by status">
-                        <button type="button" data-filter="all" class="filter-tab active-tab px-4 py-2.5 rounded-lg border border-creme-border bg-creme-light text-xs font-bold uppercase tracking-wider text-ink-heading hover:border-navy-deep">
+                        <button type="button" role="tab" aria-selected="true" data-filter="all" class="filter-tab active-tab px-4 py-2.5 rounded-lg border border-creme-border bg-creme-light text-xs font-bold uppercase tracking-wider text-ink-heading hover:border-navy-header tabular-eng">
                             All Works (7)
                         </button>
-                        <button type="button" data-filter="ongoing" class="filter-tab px-4 py-2.5 rounded-lg border border-creme-border bg-creme-light text-xs font-bold uppercase tracking-wider text-ink-heading hover:border-navy-deep">
+                        <button type="button" role="tab" aria-selected="false" data-filter="ongoing" class="filter-tab px-4 py-2.5 rounded-lg border border-creme-border bg-creme-light text-xs font-bold uppercase tracking-wider text-ink-heading hover:border-navy-header tabular-eng">
                             Ongoing Works (5)
                         </button>
-                        <button type="button" data-filter="completed" class="filter-tab px-4 py-2.5 rounded-lg border border-creme-border bg-creme-light text-xs font-bold uppercase tracking-wider text-ink-heading hover:border-navy-deep">
+                        <button type="button" role="tab" aria-selected="false" data-filter="completed" class="filter-tab px-4 py-2.5 rounded-lg border border-creme-border bg-creme-light text-xs font-bold uppercase tracking-wider text-ink-heading hover:border-navy-header tabular-eng">
                             Completed Works (2)
                         </button>
                     </div>
                 </div>
 
-                <!-- ONGOING WORKS GROUP (5 PROJECTS) -->
+                <!-- ONGOING WORKS GROUP (FLAGSHIP ₹56 CR FEATURED BANNER + BALANCED 2x2 GRID) -->
                 <div id="ongoing-group" class="mb-14">
                     <div class="flex items-center gap-3 mb-6">
                         <span class="w-3 h-3 rounded-full bg-gold-primary ring-4 ring-gold-primary/25"></span>
                         <h3 class="font-serif font-bold text-2xl text-ink-heading">
-                            Ongoing Works <span class="text-base font-sans font-semibold text-gold-dark">(5 Active Projects)</span>
+                            Ongoing Works <span class="text-base font-sans font-semibold text-gold-dark tabular-eng">(5 Active Projects)</span>
                         </h3>
                     </div>
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-                        <!-- Ongoing 1 -->
-                        <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="ongoing">
+                        <!-- Ongoing 1: Flagship ₹56.00 Cr Project Featured Banner -->
+                        <article class="project-card reveal lg:col-span-2 bg-creme-goldtint rounded-2xl p-6 sm:p-8 border-2 border-gold-metallic shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="ongoing">
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded-md bg-navy-deep text-gold-bright text-[11px] font-bold uppercase tracking-wider">
-                                    Ongoing &bull; Metro Line 06
-                                </span>
-                                <span class="font-serif font-bold text-lg text-navy-deep">&#8377;56.00 Crores</span>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-2.5 py-1 rounded-md bg-navy-header text-gold-bright text-[11px] font-bold uppercase tracking-wider">
+                                        Flagship Ongoing &bull; Metro Line 06
+                                    </span>
+                                </div>
+                                <span class="font-serif font-bold text-xl text-navy-header tabular-eng">&#8377;56.00 Crores</span>
                             </div>
-                            <h4 class="font-serif font-bold text-lg sm:text-xl text-ink-heading leading-snug mb-2.5">
+                            <h4 class="font-serif font-bold text-xl sm:text-2xl text-ink-heading leading-snug mb-2.5">
                                 Construction of 36.6 m Wide Road at Adarsh Nagar below Mumbai Metro Line 06
                             </h4>
-                            <p class="text-sm text-ink-body leading-relaxed mb-5 flex-grow">
+                            <p class="text-sm text-ink-body leading-relaxed mb-5">
                                 <strong class="text-ink-heading">Nature of Work:</strong> Construction of cement concrete road, side strip, drain, footpaths, and retaining walls.
                             </p>
-                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70 mb-4">
-                                <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                                <div class="bg-creme-light rounded-xl p-3.5 border border-creme-border text-xs">
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
                                     <span class="font-semibold text-ink-heading">J. Kumar Infraprojects Ltd.</span>
                                 </div>
-                                <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
+                                <div class="bg-creme-light rounded-xl p-3.5 border border-creme-border text-xs">
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
                                     <span class="font-semibold text-ink-heading">D.M.R.C.</span>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="flex items-center justify-between text-xs font-bold mb-1.5">
-                                    <span class="text-ink-muted uppercase tracking-wider">Work Progress</span>
-                                    <span class="text-navy-deep">74% Completed</span>
-                                </div>
-                                <div class="w-full h-2.5 rounded-full bg-creme-deep overflow-hidden border border-creme-border">
-                                    <div class="h-full rounded-full bg-gradient-to-r from-navy-deep via-navy-steel to-gold-primary" style="width: 74%;"></div>
+                                <div>
+                                    <div class="flex items-center justify-between text-xs font-bold mb-1.5">
+                                        <span class="text-ink-muted uppercase tracking-wider">Work Progress</span>
+                                        <span class="text-navy-header tabular-eng">74% Completed</span>
+                                    </div>
+                                    <div class="w-full h-2.5 rounded-full bg-creme-deep overflow-hidden border border-creme-border">
+                                        <div class="h-full rounded-l-full bg-navy-base border-r-[3px] border-gold-primary" style="width: 74%;"></div>
+                                    </div>
                                 </div>
                             </div>
                         </article>
@@ -734,10 +1133,10 @@
                         <!-- Ongoing 2 -->
                         <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="ongoing">
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded-md bg-navy-deep text-gold-bright text-[11px] font-bold uppercase tracking-wider">
+                                <span class="px-2.5 py-1 rounded-md bg-navy-header text-gold-bright text-[11px] font-bold uppercase tracking-wider">
                                     Ongoing &bull; Major Junction
                                 </span>
-                                <span class="font-serif font-bold text-lg text-navy-deep">&#8377;14.00 Crores</span>
+                                <span class="font-serif font-bold text-lg text-navy-header tabular-eng">&#8377;14.00 Crores</span>
                             </div>
                             <h4 class="font-serif font-bold text-lg sm:text-xl text-ink-heading leading-snug mb-2.5">
                                 Development of JVLR Junction
@@ -745,23 +1144,23 @@
                             <p class="text-sm text-ink-body leading-relaxed mb-5 flex-grow">
                                 <strong class="text-ink-heading">Nature of Work:</strong> Construction of asphalt roads, drains, and footpaths.
                             </p>
-                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70 mb-4">
+                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base rounded-xl p-3.5 border border-creme-border/80 mb-4">
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
                                     <span class="font-semibold text-ink-heading">J. Kumar Infraprojects Ltd.</span>
                                 </div>
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
                                     <span class="font-semibold text-ink-heading">D.M.R.C.</span>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-between text-xs font-bold mb-1.5">
                                     <span class="text-ink-muted uppercase tracking-wider">Work Progress</span>
-                                    <span class="text-navy-deep">65% Completed</span>
+                                    <span class="text-navy-header tabular-eng">65% Completed</span>
                                 </div>
                                 <div class="w-full h-2.5 rounded-full bg-creme-deep overflow-hidden border border-creme-border">
-                                    <div class="h-full rounded-full bg-gradient-to-r from-navy-deep via-navy-steel to-gold-primary" style="width: 65%;"></div>
+                                    <div class="h-full rounded-l-full bg-navy-base border-r-[3px] border-gold-primary" style="width: 65%;"></div>
                                 </div>
                             </div>
                         </article>
@@ -769,34 +1168,34 @@
                         <!-- Ongoing 3 -->
                         <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="ongoing">
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded-md bg-navy-deep text-gold-bright text-[11px] font-bold uppercase tracking-wider">
-                                    Ongoing &bull; Metro Line 09
+                                <span class="px-2.5 py-1 rounded-md bg-navy-header text-gold-bright text-[11px] font-bold uppercase tracking-wider">
+                                    Ongoing &bull; Metro Line 2B (Pkg 1)
                                 </span>
-                                <span class="font-serif font-bold text-lg text-navy-deep">&#8377;7.36 Crores</span>
+                                <span class="font-serif font-bold text-lg text-navy-header tabular-eng">&#8377;13.50 Crores</span>
                             </div>
                             <h4 class="font-serif font-bold text-lg sm:text-xl text-ink-heading leading-snug mb-2.5">
-                                Construction of Slip Road at Mira Road below Mumbai Metro Line 09
+                                Implementation of Multimodal Integration Facilities below Metro Line 2B — Package 1
                             </h4>
                             <p class="text-sm text-ink-body leading-relaxed mb-5 flex-grow">
-                                <strong class="text-ink-heading">Nature of Work:</strong> Construction of cement concrete roads and C.C. passage side strip.
+                                <strong class="text-ink-heading">Nature of Work:</strong> Construction of footpaths, side strips, roads, bus/auto/taxi bays, landscaping, street furniture, and drains.
                             </p>
-                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70 mb-4">
+                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base rounded-xl p-3.5 border border-creme-border/80 mb-4">
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
-                                    <span class="font-semibold text-ink-heading">J. Kumar Infraprojects Ltd.</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
+                                    <span class="font-semibold text-ink-heading">R.P. Shah Infraprojects Pvt. Ltd.</span>
                                 </div>
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
-                                    <span class="font-semibold text-ink-heading">Systra-GEC-SMCIPL</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
+                                    <span class="font-semibold text-ink-heading">MMRDA</span>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-between text-xs font-bold mb-1.5">
                                     <span class="text-ink-muted uppercase tracking-wider">Work Progress</span>
-                                    <span class="text-navy-deep">95% Completed</span>
+                                    <span class="text-navy-header tabular-eng">50% Completed</span>
                                 </div>
                                 <div class="w-full h-2.5 rounded-full bg-creme-deep overflow-hidden border border-creme-border">
-                                    <div class="h-full rounded-full bg-gradient-to-r from-navy-deep via-navy-steel to-gold-primary" style="width: 95%;"></div>
+                                    <div class="h-full rounded-l-full bg-navy-base border-r-[3px] border-gold-primary" style="width: 50%;"></div>
                                 </div>
                             </div>
                         </article>
@@ -804,10 +1203,10 @@
                         <!-- Ongoing 4 -->
                         <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="ongoing">
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded-md bg-navy-deep text-gold-bright text-[11px] font-bold uppercase tracking-wider">
+                                <span class="px-2.5 py-1 rounded-md bg-navy-header text-gold-bright text-[11px] font-bold uppercase tracking-wider">
                                     Ongoing &bull; Metro Line 09
                                 </span>
-                                <span class="font-serif font-bold text-lg text-navy-deep">&#8377;8.34 Crores</span>
+                                <span class="font-serif font-bold text-lg text-navy-header tabular-eng">&#8377;8.34 Crores</span>
                             </div>
                             <h4 class="font-serif font-bold text-lg sm:text-xl text-ink-heading leading-snug mb-2.5">
                                 Construction of Service Road at Dahisar below Mumbai Metro Line 09
@@ -815,58 +1214,58 @@
                             <p class="text-sm text-ink-body leading-relaxed mb-5 flex-grow">
                                 <strong class="text-ink-heading">Nature of Work:</strong> Construction of cement concrete roads, CC passage side strip, minor nalla, side drains, and footpaths.
                             </p>
-                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70 mb-4">
+                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base rounded-xl p-3.5 border border-creme-border/80 mb-4">
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
                                     <span class="font-semibold text-ink-heading">J. Kumar Infraprojects Ltd.</span>
                                 </div>
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
                                     <span class="font-semibold text-ink-heading">Systra-GEC-SMCIPL</span>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-center justify-between text-xs font-bold mb-1.5">
                                     <span class="text-ink-muted uppercase tracking-wider">Work Progress</span>
-                                    <span class="text-navy-deep">90% Completed</span>
+                                    <span class="text-navy-header tabular-eng">90% Completed</span>
                                 </div>
                                 <div class="w-full h-2.5 rounded-full bg-creme-deep overflow-hidden border border-creme-border">
-                                    <div class="h-full rounded-full bg-gradient-to-r from-navy-deep via-navy-steel to-gold-primary" style="width: 90%;"></div>
+                                    <div class="h-full rounded-l-full bg-navy-base border-r-[3px] border-gold-primary" style="width: 90%;"></div>
                                 </div>
                             </div>
                         </article>
 
-                        <!-- Ongoing 5 (Full Width on Desktop 2-col or Clean Card) -->
-                        <article class="project-card reveal lg:col-span-2 bg-creme-light rounded-2xl p-6 sm:p-7 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="ongoing">
+                        <!-- Ongoing 5 -->
+                        <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-creme-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="ongoing">
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <span class="px-2.5 py-1 rounded-md bg-navy-deep text-gold-bright text-[11px] font-bold uppercase tracking-wider">
-                                    Ongoing &bull; Metro Line 2B (Package 1)
+                                <span class="px-2.5 py-1 rounded-md bg-navy-header text-gold-bright text-[11px] font-bold uppercase tracking-wider">
+                                    Ongoing &bull; Metro Line 09
                                 </span>
-                                <span class="font-serif font-bold text-lg text-navy-deep">&#8377;13.50 Crores</span>
+                                <span class="font-serif font-bold text-lg text-navy-header tabular-eng">&#8377;7.36 Crores</span>
                             </div>
                             <h4 class="font-serif font-bold text-lg sm:text-xl text-ink-heading leading-snug mb-2.5">
-                                Implementation of Multimodal Integration Facilities below Metro Line 2B — Package 1
+                                Construction of Slip Road at Mira Road below Mumbai Metro Line 09
                             </h4>
-                            <p class="text-sm text-ink-body leading-relaxed mb-5">
-                                <strong class="text-ink-heading">Nature of Work:</strong> Construction of footpaths, side strips, roads, bus/auto/taxi bays, landscaping, street furniture, and drains.
+                            <p class="text-sm text-ink-body leading-relaxed mb-5 flex-grow">
+                                <strong class="text-ink-heading">Nature of Work:</strong> Construction of cement concrete roads and C.C. passage side strip.
                             </p>
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
-                                <div class="bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70 text-xs">
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
-                                    <span class="font-semibold text-ink-heading">R.P. Shah Infraprojects Pvt. Ltd.</span>
-                                </div>
-                                <div class="bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70 text-xs">
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
-                                    <span class="font-semibold text-ink-heading">MMRDA</span>
+                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base rounded-xl p-3.5 border border-creme-border/80 mb-4">
+                                <div>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
+                                    <span class="font-semibold text-ink-heading">J. Kumar Infraprojects Ltd.</span>
                                 </div>
                                 <div>
-                                    <div class="flex items-center justify-between text-xs font-bold mb-1.5">
-                                        <span class="text-ink-muted uppercase tracking-wider">Work Progress</span>
-                                        <span class="text-navy-deep">50% Completed</span>
-                                    </div>
-                                    <div class="w-full h-2.5 rounded-full bg-creme-deep overflow-hidden border border-creme-border">
-                                        <div class="h-full rounded-full bg-gradient-to-r from-navy-deep via-navy-steel to-gold-primary" style="width: 50%;"></div>
-                                    </div>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
+                                    <span class="font-semibold text-ink-heading">Systra-GEC-SMCIPL</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between text-xs font-bold mb-1.5">
+                                    <span class="text-ink-muted uppercase tracking-wider">Work Progress</span>
+                                    <span class="text-navy-header tabular-eng">95% Completed</span>
+                                </div>
+                                <div class="w-full h-2.5 rounded-full bg-creme-deep overflow-hidden border border-creme-border">
+                                    <div class="h-full rounded-l-full bg-navy-base border-r-[3px] border-gold-primary" style="width: 95%;"></div>
                                 </div>
                             </div>
                         </article>
@@ -874,27 +1273,27 @@
                     </div>
                 </div>
 
-                <!-- COMPLETED WORKS GROUP (2 PROJECTS) -->
+                <!-- COMPLETED WORKS GROUP (DEEP ARCHITECTURAL FOREST #164E3D & MUTED SAGE-SLATE BORDER #B6CCC3) -->
                 <div id="completed-group" class="mb-14">
                     <div class="flex items-center gap-3 mb-6">
-                        <span class="w-3 h-3 rounded-full bg-emerald-600 ring-4 ring-emerald-600/20"></span>
+                        <span class="w-3 h-3 rounded-full bg-forest-badge ring-4 ring-forest-badge/20"></span>
                         <h3 class="font-serif font-bold text-2xl text-ink-heading">
-                            Completed Works <span class="text-base font-sans font-semibold text-emerald-800">(2 Handed-Over Projects)</span>
+                            Completed Works <span class="text-base font-sans font-semibold text-forest-badge tabular-eng">(2 Handed-Over Projects)</span>
                         </h3>
                     </div>
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
                         <!-- Completed 1 -->
-                        <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-emerald-700/35 shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="completed">
+                        <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-forest-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="completed">
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-800 text-white text-[11px] font-bold uppercase tracking-wider">
-                                    <svg class="w-3.5 h-3.5 text-gold-bright" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-forest-badge text-white text-[11px] font-bold uppercase tracking-wider tabular-eng">
+                                    <svg class="w-3.5 h-3.5 text-gold-bright" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
                                     </svg>
                                     100% Completed
                                 </span>
-                                <span class="font-serif font-bold text-base text-navy-deep">As per site requirements</span>
+                                <span class="font-serif font-bold text-base text-navy-header">As per site requirements</span>
                             </div>
                             <h4 class="font-serif font-bold text-lg sm:text-xl text-ink-heading leading-snug mb-2.5">
                                 Monsoon Maintenance of Roads in Mastic Asphalt below Mumbai Metro Line 06
@@ -902,28 +1301,28 @@
                             <p class="text-sm text-ink-body leading-relaxed mb-5 flex-grow">
                                 <strong class="text-ink-heading">Nature of Work:</strong> Prevention and filling of potholes during monsoon season using durable mastic asphalt along the Metro Line 06 corridor.
                             </p>
-                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70">
+                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base rounded-xl p-3.5 border border-creme-border/80">
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
                                     <span class="font-semibold text-ink-heading">J. Kumar Infraprojects Ltd.</span>
                                 </div>
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
                                     <span class="font-semibold text-ink-heading">D.M.R.C.</span>
                                 </div>
                             </div>
                         </article>
 
                         <!-- Completed 2 -->
-                        <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-emerald-700/35 shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="completed">
+                        <article class="project-card reveal bg-creme-light rounded-2xl p-6 sm:p-7 border border-forest-border shadow-creme-card hover:shadow-creme-hover transition-all duration-300 flex flex-col" data-status="completed">
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-800 text-white text-[11px] font-bold uppercase tracking-wider">
-                                    <svg class="w-3.5 h-3.5 text-gold-bright" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-forest-badge text-white text-[11px] font-bold uppercase tracking-wider tabular-eng">
+                                    <svg class="w-3.5 h-3.5 text-gold-bright" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
                                     </svg>
                                     100% Completed
                                 </span>
-                                <span class="font-serif font-bold text-lg text-navy-deep">&#8377;2.50 Crores</span>
+                                <span class="font-serif font-bold text-lg text-navy-header tabular-eng">&#8377;2.50 Crores</span>
                             </div>
                             <h4 class="font-serif font-bold text-lg sm:text-xl text-ink-heading leading-snug mb-2.5">
                                 Construction of Flyover (Missing Link) from Link Road to Poonam Nagar
@@ -931,13 +1330,13 @@
                             <p class="text-sm text-ink-body leading-relaxed mb-5 flex-grow">
                                 <strong class="text-ink-heading">Nature of Work:</strong> Construction of Approach Ramp in Retaining Earth (RE) Panel walls, PQC roads, and Crash Barrier with friction slab.
                             </p>
-                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base/80 rounded-xl p-3.5 border border-creme-border/70">
+                            <div class="grid grid-cols-2 gap-3 text-xs bg-creme-base rounded-xl p-3.5 border border-creme-border/80">
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Client</span>
                                     <span class="font-semibold text-ink-heading">J. Kumar Infraprojects Ltd.</span>
                                 </div>
                                 <div>
-                                    <span class="block text-[10px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-gold-dark">Consultant</span>
                                     <span class="font-semibold text-ink-heading">MMRDA</span>
                                 </div>
                             </div>
@@ -952,11 +1351,11 @@
                         Key Clients &amp; Project Consultants
                     </p>
                     <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-deep">D.M.R.C.</span>
-                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-deep">MMRDA</span>
-                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-deep">Systra-GEC-SMCIPL</span>
-                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-deep">J. Kumar Infraprojects Ltd.</span>
-                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-deep">R.P. Shah Infraprojects Pvt. Ltd.</span>
+                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-header">D.M.R.C.</span>
+                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-header">MMRDA</span>
+                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-header">Systra-GEC-SMCIPL</span>
+                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-header">J. Kumar Infraprojects Ltd.</span>
+                        <span class="px-4 py-2.5 rounded-lg bg-creme-base border border-creme-border text-xs sm:text-sm font-bold text-navy-header">R.P. Shah Infraprojects Pvt. Ltd.</span>
                     </div>
                 </div>
 
@@ -964,7 +1363,7 @@
         </section>
 
         <!-- =========================================================
-             6. LEADERSHIP TRACK RECORD (ON WARM CREME #F3EBD8)
+             6. LEADERSHIP TRACK RECORD (WARM LIMESTONE #EFECE4)
         ========================================================== -->
         <section id="leadership" class="py-20 sm:py-24 bg-creme-deep border-y border-creme-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -998,25 +1397,25 @@
                                     M/s J. Kumar Infraprojects Ltd.
                                 </h3>
                             </div>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-navy-deep text-gold-bright font-bold text-xs tracking-wider">
+                            <span class="px-3.5 py-1.5 rounded-lg bg-navy-header text-gold-bright font-bold text-xs tracking-wider tabular-eng">
                                 2007 &ndash; 2020
                             </span>
                         </div>
                         <ul class="space-y-3.5 text-sm text-ink-body leading-relaxed">
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Construction of <strong class="text-ink-heading">Cement Concrete (CC) roads</strong> for MCGM at various locations across Mumbai.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Construction of <strong class="text-ink-heading">Road Over Bridge (R.O.B.)</strong> at Vasai East.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Construction of <strong class="text-ink-heading">Elevated Metro Line 02 &ndash; SE-01</strong> from Dahisar East to Kandivali West for DMRC / MMRDA.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Implementation of <strong class="text-ink-heading">multimodal integration facilities</strong> below Mumbai Metro Line 7 from Dahisar East to Akurli Road metro stations.</span>
                             </li>
                         </ul>
@@ -1031,25 +1430,25 @@
                                     M/s Relcon Infraprojects Ltd.
                                 </h3>
                             </div>
-                            <span class="px-3.5 py-1.5 rounded-lg bg-navy-deep text-gold-bright font-bold text-xs tracking-wider">
+                            <span class="px-3.5 py-1.5 rounded-lg bg-navy-header text-gold-bright font-bold text-xs tracking-wider tabular-eng">
                                 1999 &ndash; 2007
                             </span>
                         </div>
                         <ul class="space-y-3.5 text-sm text-ink-body leading-relaxed">
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Construction of <strong class="text-ink-heading">roads, drains, and footpaths</strong> at various locations across Mumbai.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Removal of hard rock by <strong class="text-ink-heading">controlled blasting method</strong> and desilting of the Mithi River.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Construction of <strong class="text-ink-heading">asphalt concrete roads</strong> at various locations in Mumbai.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <span class="w-2 h-2 rounded-full bg-gold-metallic mt-2 flex-shrink-0"></span>
+                                <span class="w-2 h-2 rounded-full bg-gold-primary mt-2 flex-shrink-0"></span>
                                 <span>Laying of <strong class="text-ink-heading">water mains in L-Ward (Kurla)</strong> for MCGM.</span>
                             </li>
                         </ul>
@@ -1060,7 +1459,7 @@
         </section>
 
         <!-- =========================================================
-             7. GET IN TOUCH & QUOTATION REQUEST (HIGH CONTRAST, #FAF4E6)
+             7. GET IN TOUCH & QUOTATION REQUEST (ALABASTER #F8F6F1)
         ========================================================== -->
         <section id="contact" class="py-20 sm:py-24 bg-creme-base">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1078,25 +1477,25 @@
                         Request a Project Quotation
                     </h2>
                     <p class="text-ink-body text-base leading-relaxed">
-                        Planning a Cement Concrete (CC) road, asphalt carriageway, drainage network, or multimodal civil package? Reach out directly or send your inquiry below.
+                        Planning a Cement Concrete (CC) road, asphalt carriageway, drainage network, or multimodal civil package? Send your inquiry directly via WhatsApp, Email, or one-click copy.
                     </p>
                 </div>
 
                 <!-- 2-Column Contact Card & Quotation Form -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
 
-                    <!-- Left Column: High-Contrast Deep Navy Contact Card -->
+                    <!-- Left Column: Sovereign Midnight Contact Card -->
                     <div class="lg:col-span-5 reveal flex flex-col">
                         <div class="contact-navy-card flex-grow rounded-2xl p-8 sm:p-10 shadow-creme-card border border-gold-primary/45 relative overflow-hidden flex flex-col justify-between">
                             <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-gold-metallic via-gold-primary to-gold-metallic"></div>
 
                             <div class="relative z-10">
-                                <!-- Brand Header with Self-Contained Inline SVG AE Logo -->
+                                <!-- Brand Header with Dual-Mode Dark-Surface Inline SVG AE Logo -->
                                 <div class="flex items-center gap-3.5 pb-6 border-b border-white/20">
                                     <svg class="w-12 h-10 flex-shrink-0" viewBox="0 0 130 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                        <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#4B7BB6"/>
-                                        <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#3D699E"/>
-                                        <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#121F36" stroke="#121F36" stroke-width="3.5" stroke-linejoin="round"/>
+                                        <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#5B91CE"/>
+                                        <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#487AB5"/>
+                                        <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#0B1526" stroke="#0B1526" stroke-width="3.5" stroke-linejoin="round"/>
                                         <path d="M5 81 C28 43, 68 24, 125 32.5 C81 29.5, 45 48, 22 81 Z" fill="#F5BE18"/>
                                     </svg>
                                     <div>
@@ -1113,16 +1512,16 @@
                                     Available for back-to-back civil contracting, site inspections, BOQ rate consultations, and Mumbai Metro &amp; municipal infrastructure packages.
                                 </p>
 
-                                <!-- Quick Call & WhatsApp Action Buttons -->
+                                <!-- Quick Call & Unified Deep Forest WhatsApp Action Buttons -->
                                 <div class="grid grid-cols-2 gap-3 mt-6">
-                                    <a href="tel:+919820287245" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gold-primary text-navy-deep font-bold text-xs uppercase tracking-wider hover:bg-gold-hover transition-colors shadow-gold-btn">
-                                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <a href="tel:+919820287245" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gold-primary text-navy-header font-bold text-xs uppercase tracking-wider hover:bg-gold-hover transition-colors shadow-gold-btn">
+                                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                                         </svg>
                                         <span>Call Now</span>
                                     </a>
-                                    <a href="https://wa.me/919820287245?text=Hello%20Anika%20Enterprise%2C%20I%20would%20like%20to%20discuss%20a%20civil%20engineering%20project." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gold-primary text-navy-deep font-bold text-xs uppercase tracking-wider hover:bg-gold-hover transition-colors shadow-gold-btn">
-                                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <a href="https://wa.me/919820287245?text=Hello%20Anika%20Enterprise%2C%20I%20would%20like%20to%20discuss%20a%20civil%20engineering%20project." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-forest-cta hover:bg-forest-hover text-white font-bold text-xs uppercase tracking-wider border border-white/20 transition-colors">
+                                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                                         </svg>
                                         <span>WhatsApp</span>
@@ -1133,8 +1532,8 @@
                                 <div class="mt-7 space-y-5">
                                     <!-- Registered Office -->
                                     <div class="flex items-start gap-3.5">
-                                        <div class="w-10 h-10 rounded-lg bg-navy-deep border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <div class="w-10 h-10 rounded-lg bg-navy-header border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                             </svg>
@@ -1150,23 +1549,23 @@
 
                                     <!-- Phone -->
                                     <div class="flex items-start gap-3.5">
-                                        <div class="w-10 h-10 rounded-lg bg-navy-deep border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <div class="w-10 h-10 rounded-lg bg-navy-header border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                                             </svg>
                                         </div>
                                         <div>
                                             <h4 class="text-xs font-bold uppercase tracking-wider text-gold-bright">Phone</h4>
                                             <p class="mt-1">
-                                                <a href="tel:+919820287245" class="contact-link text-sm font-semibold">+91 98202 87245</a>
+                                                <a href="tel:+919820287245" class="contact-link text-sm font-semibold tabular-eng">+91 98202 87245</a>
                                             </p>
                                         </div>
                                     </div>
 
                                     <!-- Direct Email -->
                                     <div class="flex items-start gap-3.5">
-                                        <div class="w-10 h-10 rounded-lg bg-navy-deep border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <div class="w-10 h-10 rounded-lg bg-navy-header border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                                             </svg>
                                         </div>
@@ -1174,7 +1573,7 @@
                                             <h4 class="text-xs font-bold uppercase tracking-wider text-gold-bright">Email</h4>
                                             <div class="flex flex-wrap items-center gap-2.5 mt-1">
                                                 <a href="mailto:anika.ent@yahoo.com" class="contact-link text-sm font-semibold">anika.ent@yahoo.com</a>
-                                                <button id="copy-email-btn" type="button" class="px-2.5 py-1 rounded border border-gold-bright/70 bg-navy-deep text-[11px] font-bold text-gold-bright hover:bg-gold-primary hover:text-navy-deep transition-colors">
+                                                <button id="copy-email-btn" type="button" class="px-2.5 py-1 rounded border border-gold-bright/70 bg-navy-header text-[11px] font-bold text-gold-bright hover:bg-gold-primary hover:text-navy-header transition-colors">
                                                     Copy Email
                                                 </button>
                                             </div>
@@ -1183,16 +1582,16 @@
 
                                     <!-- GST Reg. No. -->
                                     <div class="flex items-start gap-3.5">
-                                        <div class="w-10 h-10 rounded-lg bg-navy-deep border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <div class="w-10 h-10 rounded-lg bg-navy-header border border-gold-bright/45 flex items-center justify-center flex-shrink-0 text-gold-bright mt-0.5">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                                             </svg>
                                         </div>
                                         <div>
                                             <h4 class="text-xs font-bold uppercase tracking-wider text-gold-bright">GST Reg. No.</h4>
                                             <div class="flex flex-wrap items-center gap-2.5 mt-1">
-                                                <span class="text-sm font-mono font-semibold text-white">27AKCPS7530D1Z7</span>
-                                                <button id="copy-gst-btn" type="button" class="px-2.5 py-1 rounded border border-gold-bright/70 bg-navy-deep text-[11px] font-bold text-gold-bright hover:bg-gold-primary hover:text-navy-deep transition-colors">
+                                                <span class="text-sm font-mono font-semibold text-white tabular-eng">27AKCPS7530D1Z7</span>
+                                                <button id="copy-gst-btn" type="button" class="px-2.5 py-1 rounded border border-gold-bright/70 bg-navy-header text-[11px] font-bold text-gold-bright hover:bg-gold-primary hover:text-navy-header transition-colors">
                                                     Copy GST
                                                 </button>
                                             </div>
@@ -1203,49 +1602,52 @@
                         </div>
                     </div>
 
-                    <!-- Right Column: High-Contrast Warm Ivory Quotation Form -->
+                    <!-- Right Column: Pure Warm White Quotation Form -->
                     <div class="lg:col-span-7 reveal">
                         <div class="rounded-2xl bg-creme-light border border-creme-border p-7 sm:p-10 shadow-creme-card h-full">
-                            <h3 class="font-serif font-bold text-2xl text-navy-deep mb-1.5">
+                            <h3 class="font-serif font-bold text-2xl text-navy-header mb-1.5">
                                 Send Project Inquiry
                             </h3>
                             <p class="text-sm text-ink-body mb-7">
-                                Fill in your project requirements below to generate a pre-formatted email to <strong class="text-navy-deep">anika.ent@yahoo.com</strong> or copy your inquiry details in one click.
+                                Fill in your project requirements below to send instantly via <strong class="text-navy-header">WhatsApp</strong>, draft an email to <strong class="text-navy-header">anika.ent@yahoo.com</strong>, or copy your inquiry details in one click.
                             </p>
 
                             <!-- Inline Validation Error Box -->
                             <div id="form-error-box" class="hidden mb-6 p-4 rounded-xl bg-red-50 border border-red-300 text-red-900 text-sm flex items-start gap-3" role="alert">
-                                <svg class="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                                 <span id="form-error-text">Please complete all required fields before submitting.</span>
                             </div>
 
                             <!-- Inline Confirmation Panel -->
-                            <div id="form-success-box" class="hidden mb-6 p-6 rounded-xl bg-[#FEF8E6] border border-gold-metallic text-navy-deep" role="status">
+                            <div id="form-success-box" class="hidden mb-6 p-6 rounded-xl bg-creme-goldtint border border-gold-metallic text-navy-header" role="status">
                                 <div class="flex items-start gap-3.5">
-                                    <div class="w-9 h-9 rounded-full bg-navy-deep text-gold-bright flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <div class="w-9 h-9 rounded-full bg-navy-header text-gold-bright flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"/>
                                         </svg>
                                     </div>
                                     <div class="flex-grow">
-                                        <h4 class="font-serif font-bold text-lg text-navy-deep">
+                                        <h4 class="font-serif font-bold text-lg text-navy-header">
                                             Quotation Inquiry Prepared
                                         </h4>
                                         <p class="text-sm text-ink-body mt-1 leading-relaxed">
-                                            Thank you, <strong id="confirm-name" class="text-navy-deep"></strong>. Your email draft to <strong class="text-navy-deep">anika.ent@yahoo.com</strong> is ready. You can also copy the full text below.
+                                            Thank you, <strong id="confirm-name" class="text-navy-header"></strong>. Choose how you would like to send your inquiry below, or copy the full summary.
                                         </p>
-                                        <pre id="inquiry-summary-preview" class="mt-3 p-3.5 rounded-lg bg-white border border-creme-border text-xs text-[#0F172A] whitespace-pre-wrap font-sans leading-relaxed max-h-40 overflow-y-auto"></pre>
+                                        <pre id="inquiry-summary-preview" class="mt-3 p-3.5 rounded-lg bg-white border border-creme-border text-xs text-[#0B1526] whitespace-pre-wrap font-sans leading-relaxed max-h-40 overflow-y-auto"></pre>
 
-                                        <div class="mt-4 flex flex-wrap items-center gap-3">
-                                            <a id="manual-mailto-link" href="mailto:anika.ent@yahoo.com" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-navy-deep text-gold-bright text-xs font-bold uppercase tracking-wider hover:bg-navy-mid transition-colors">
+                                        <div class="mt-4 flex flex-wrap items-center gap-2.5">
+                                            <a id="manual-whatsapp-link" href="https://wa.me/919820287245" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-forest-cta hover:bg-forest-hover text-white text-xs font-bold uppercase tracking-wider transition-colors">
+                                                Send via WhatsApp
+                                            </a>
+                                            <a id="manual-mailto-link" href="mailto:anika.ent@yahoo.com" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-navy-header text-gold-bright text-xs font-bold uppercase tracking-wider hover:bg-navy-mid transition-colors">
                                                 Open Email Draft
                                             </a>
-                                            <button id="copy-inquiry-btn" type="button" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-creme-deep border border-navy-deep/30 text-navy-deep text-xs font-bold uppercase tracking-wider hover:bg-gold-primary transition-colors">
-                                                Copy Inquiry Details
+                                            <button id="copy-inquiry-btn" type="button" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-creme-deep border border-navy-header/25 text-navy-header text-xs font-bold uppercase tracking-wider hover:bg-gold-primary transition-colors">
+                                                Copy Inquiry
                                             </button>
-                                            <button id="reset-form-btn" type="button" class="inline-flex items-center px-4 py-2.5 rounded-lg border border-creme-border bg-white text-navy-deep text-xs font-semibold hover:bg-creme-base transition-colors">
+                                            <button id="reset-form-btn" type="button" class="inline-flex items-center px-4 py-2.5 rounded-lg border border-creme-border bg-white text-navy-header text-xs font-semibold hover:bg-creme-base transition-colors">
                                                 New Inquiry
                                             </button>
                                         </div>
@@ -1257,37 +1659,37 @@
                             <form id="quotation-form" class="space-y-5" novalidate>
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
-                                        <label for="full-name" class="block text-xs font-bold uppercase tracking-wider text-navy-deep mb-2">
+                                        <label for="full-name" class="block text-xs font-bold uppercase tracking-wider text-navy-header mb-2">
                                             Full Name <span class="text-gold-dark">*</span>
                                         </label>
                                         <input type="text" id="full-name" name="fullName" required placeholder="e.g., Rajesh Kulkarni"
-                                            class="w-full px-4 py-3 rounded-xl bg-white border border-creme-border text-sm text-[#0F172A] placeholder-[#5A6577] focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
+                                            class="w-full px-4 py-3 rounded-xl bg-creme-base/50 border border-creme-border text-sm text-[#0B1526] placeholder-[#5A6577] focus:bg-white focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
                                     </div>
 
                                     <div>
-                                        <label for="organization" class="block text-xs font-bold uppercase tracking-wider text-navy-deep mb-2">
+                                        <label for="organization" class="block text-xs font-bold uppercase tracking-wider text-navy-header mb-2">
                                             Company / Organization
                                         </label>
                                         <input type="text" id="organization" name="organization" placeholder="e.g., Horizon Infra Pvt. Ltd."
-                                            class="w-full px-4 py-3 rounded-xl bg-white border border-creme-border text-sm text-[#0F172A] placeholder-[#5A6577] focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
+                                            class="w-full px-4 py-3 rounded-xl bg-creme-base/50 border border-creme-border text-sm text-[#0B1526] placeholder-[#5A6577] focus:bg-white focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
                                     </div>
                                 </div>
 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
-                                        <label for="contact-info" class="block text-xs font-bold uppercase tracking-wider text-navy-deep mb-2">
+                                        <label for="contact-info" class="block text-xs font-bold uppercase tracking-wider text-navy-header mb-2">
                                             Phone or Email <span class="text-gold-dark">*</span>
                                         </label>
                                         <input type="text" id="contact-info" name="contactInfo" required placeholder="e.g., +91 98XXX XXXXX or email"
-                                            class="w-full px-4 py-3 rounded-xl bg-white border border-creme-border text-sm text-[#0F172A] placeholder-[#5A6577] focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
+                                            class="w-full px-4 py-3 rounded-xl bg-creme-base/50 border border-creme-border text-sm text-[#0B1526] placeholder-[#5A6577] focus:bg-white focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
                                     </div>
 
                                     <div>
-                                        <label for="service-required" class="block text-xs font-bold uppercase tracking-wider text-navy-deep mb-2">
+                                        <label for="service-required" class="block text-xs font-bold uppercase tracking-wider text-navy-header mb-2">
                                             Service Required <span class="text-gold-dark">*</span>
                                         </label>
                                         <select id="service-required" name="serviceRequired" required
-                                            class="w-full px-4 py-3 rounded-xl bg-white border border-creme-border text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
+                                            class="w-full px-4 py-3 rounded-xl bg-creme-base/50 border border-creme-border text-sm text-[#0B1526] focus:bg-white focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all">
                                             <option value="Cement Concrete (CC) Road Works" selected>Cement Concrete (CC) Road Works</option>
                                             <option value="Asphalt & Bituminous Roads">Asphalt &amp; Bituminous Roads</option>
                                             <option value="Storm Water Drains, Nallas & Culverts">Storm Water Drains, Nallas &amp; Culverts</option>
@@ -1300,22 +1702,28 @@
                                 </div>
 
                                 <div>
-                                    <label for="project-details" class="block text-xs font-bold uppercase tracking-wider text-navy-deep mb-2">
+                                    <label for="project-details" class="block text-xs font-bold uppercase tracking-wider text-navy-header mb-2">
                                         Project Location &amp; Scope <span class="text-gold-dark">*</span>
                                     </label>
                                     <textarea id="project-details" name="projectDetails" rows="4" required placeholder="Share site location, approximate road length/width, concrete grade or scope of civil works, and expected timeline..."
-                                        class="w-full px-4 py-3 rounded-xl bg-white border border-creme-border text-sm text-[#0F172A] placeholder-[#5A6577] focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all resize-y"></textarea>
+                                        class="w-full px-4 py-3 rounded-xl bg-creme-base/50 border border-creme-border text-sm text-[#0B1526] placeholder-[#5A6577] focus:bg-white focus:outline-none focus:ring-2 focus:ring-gold-metallic focus:border-gold-metallic transition-all resize-y"></textarea>
                                 </div>
 
                                 <div class="pt-2 flex flex-wrap items-center gap-3">
-                                    <button type="submit" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#162642] text-gold-bright font-bold text-sm uppercase tracking-wider hover:bg-navy-mid border-b-2 border-gold-primary shadow-creme-card transition-all duration-200">
-                                        <span>Send Inquiry via Email</span>
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <button id="send-whatsapp-form-btn" type="button" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-forest-cta hover:bg-forest-hover text-white font-bold text-xs sm:text-sm uppercase tracking-wider shadow-creme-card transition-all duration-200">
+                                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                        </svg>
+                                        <span>Send via WhatsApp</span>
+                                    </button>
+                                    <button type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-navy-header text-gold-bright font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-navy-mid border-b-2 border-gold-primary shadow-creme-card transition-all duration-200">
+                                        <span>Send via Email</span>
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                                         </svg>
                                     </button>
-                                    <button id="quick-copy-form-btn" type="button" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-creme-deep border border-navy-deep/30 text-navy-deep font-bold text-xs uppercase tracking-wider hover:bg-gold-primary transition-colors">
-                                        <span>Copy Inquiry Details</span>
+                                    <button id="quick-copy-form-btn" type="button" class="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-creme-deep border border-navy-header/25 text-navy-header font-bold text-xs uppercase tracking-wider hover:bg-gold-primary transition-colors">
+                                        <span>Copy Details</span>
                                     </button>
                                 </div>
                             </form>
@@ -1328,10 +1736,9 @@
     </main>
 
     <!-- =========================================================
-         8. EXECUTIVE FOOTER (FIXED: SOLID DEEP NAVY + HIGH CONTRAST)
+         8. EXECUTIVE FOOTER (SOVEREIGN MIDNIGHT #0B1526)
     ========================================================== -->
     <footer class="site-footer pt-14 pb-10">
-        <!-- Very Low-Opacity Decorative Bokeh Layer (z-0, pointer-events-none) -->
         <div class="footer-bokeh" aria-hidden="true"></div>
 
         <div class="footer-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1341,13 +1748,13 @@
                 <div class="md:col-span-5">
                     <a href="#home" class="inline-flex items-center gap-3.5 mb-4 no-underline">
                         <svg class="w-12 h-10 flex-shrink-0" viewBox="0 0 130 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#4B7BB6"/>
-                            <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#3D699E"/>
-                            <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#0E182B" stroke="#0E182B" stroke-width="3.5" stroke-linejoin="round"/>
+                            <path d="M14 78 L38 12 H53 L77 78 H61 L56 62 H34 L29 78 Z M38 50 H52 L45 29 Z" fill="#5B91CE"/>
+                            <path d="M70 12 H112 V25 H85 V38 H108 V50 H85 V65 H113 V78 H70 Z" fill="#487AB5"/>
+                            <path d="M4 81 C28 42, 68 23, 126 32 C82 29, 46 47, 22 81 Z" fill="#0B1526" stroke="#0B1526" stroke-width="3.5" stroke-linejoin="round"/>
                             <path d="M5 81 C28 43, 68 24, 125 32.5 C81 29.5, 45 48, 22 81 Z" fill="#F5BE18"/>
                         </svg>
                         <div>
-                            <span class="block font-serif font-bold text-[#F9D65C] text-xl tracking-wide letterhead-title-shadow">
+                            <span class="block font-serif font-bold text-[#F6CA4D] text-xl tracking-wide letterhead-title-shadow">
                                 Anika Enterprise
                             </span>
                             <span class="block text-[11px] font-semibold text-white tracking-[0.16em] uppercase mt-0.5">
@@ -1362,10 +1769,11 @@
 
                 <!-- Column 2: Navigation -->
                 <div class="md:col-span-3">
-                    <h4 class="font-serif font-bold text-sm uppercase tracking-[0.16em] text-[#F9D65C] mb-4">
+                    <h4 class="font-serif font-bold text-sm uppercase tracking-[0.16em] text-[#F6CA4D] mb-4">
                         Navigation
                     </h4>
                     <ul class="space-y-2.5 text-sm font-medium">
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Core Services</a></li>
                         <li><a href="#projects">Ongoing &amp; Completed Works</a></li>
@@ -1376,7 +1784,7 @@
 
                 <!-- Column 3: Registered Office -->
                 <div class="md:col-span-4">
-                    <h4 class="font-serif font-bold text-sm uppercase tracking-[0.16em] text-[#F9D65C] mb-4">
+                    <h4 class="font-serif font-bold text-sm uppercase tracking-[0.16em] text-[#F6CA4D] mb-4">
                         Registered Office
                     </h4>
                     <address class="not-italic text-sm text-[#E2E8F0] leading-relaxed space-y-2.5">
@@ -1386,19 +1794,19 @@
                         </p>
                         <p>
                             <span class="text-[#E2E8F0] font-medium">Phone: </span>
-                            <a href="tel:+919820287245" class="font-semibold underline decoration-[#F9D65C]/75 underline-offset-4">
+                            <a href="tel:+919820287245" class="font-semibold underline decoration-[#F6CA4D]/75 underline-offset-4 tabular-eng">
                                 +91 98202 87245
                             </a>
                         </p>
                         <p>
                             <span class="text-[#E2E8F0] font-medium">Email: </span>
-                            <a href="mailto:anika.ent@yahoo.com" class="font-semibold underline decoration-[#F9D65C]/75 underline-offset-4">
+                            <a href="mailto:anika.ent@yahoo.com" class="font-semibold underline decoration-[#F6CA4D]/75 underline-offset-4">
                                 anika.ent@yahoo.com
                             </a>
                         </p>
                         <p>
                             <span class="text-[#E2E8F0] font-medium">GST Reg. No.: </span>
-                            <span class="font-mono font-semibold text-white">27AKCPS7530D1Z7</span>
+                            <span class="font-mono font-semibold text-white tabular-eng">27AKCPS7530D1Z7</span>
                         </p>
                     </address>
                 </div>
@@ -1407,7 +1815,7 @@
             <!-- Bottom Copyright Bar -->
             <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#E2E8F0]" style="border-top: 1px solid rgba(255, 255, 255, 0.18);">
                 <p>
-                    &copy; <span id="current-year">2026</span> <strong class="text-white font-semibold">M/s Anika Enterprise</strong>. All rights reserved.
+                    &copy; <span id="current-year" class="tabular-eng">2026</span> <strong class="text-white font-semibold">M/s Anika Enterprise</strong>. All rights reserved.
                 </p>
                 <p>
                     Civil Engineers &amp; Contractors &bull; Goregaon (W), Mumbai
@@ -1417,20 +1825,28 @@
     </footer>
 
     <!-- =========================================================
+         FLOATING "HOME / TOP" BUTTON (APPEARS AFTER SCROLLING)
+    ========================================================== -->
+    <button id="floating-home-btn" type="button" aria-label="Back to Home" title="Back to Home"
+        class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 px-3.5 sm:px-4 py-3 rounded-full bg-navy-header text-white border-2 border-gold-primary shadow-xl hover:bg-navy-mid hover:shadow-gold-btn focus:outline-none focus:ring-2 focus:ring-gold-bright opacity-0 translate-y-3 pointer-events-none">
+        <svg class="w-4 h-4 text-gold-bright flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M3 10.5L12 3l9 7.5M5 9.5V20a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V9.5"/>
+        </svg>
+        <span class="hidden sm:inline text-xs font-bold uppercase tracking-wider text-white">Home</span>
+    </button>
+
+    <!-- =========================================================
          TOAST NOTIFICATION (HIGH-CONTRAST COPY FEEDBACK)
     ========================================================== -->
-    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 pointer-events-none opacity-0 translate-y-3" role="status" aria-live="polite">
-        <div class="flex items-center gap-2.5 px-5 py-3 rounded-xl bg-navy-deep text-white border border-gold-primary shadow-xl text-sm font-semibold">
-            <svg class="w-4 h-4 text-gold-bright flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M5 13l4 4L19 7"/>
+    <div id="toast-notification" class="fixed bottom-20 right-6 z-50 pointer-events-none opacity-0 translate-y-3" role="status" aria-live="polite">
+        <div class="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-navy-header text-white border border-gold-primary shadow-xl text-xs sm:text-sm font-semibold">
+            <svg class="w-4 h-4 text-gold-bright flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
             </svg>
             <span id="toast-message">Copied to clipboard!</span>
         </div>
     </div>
 
-    <!-- =========================================================
-         JAVASCRIPT: MENU, PROJECT FILTERS, SCROLL REVEAL & FORM
-    ========================================================== -->
     <script>
         (function () {
             'use strict';
@@ -1460,8 +1876,20 @@
                     }, 2600);
                 }
 
-                // 3. Iframe-Safe Clipboard Helper using document.execCommand('copy')
+                // 3. Modern Clipboard API with Fallback
                 function copyTextToClipboard(text, successMsg) {
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(text).then(function () {
+                            showToast(successMsg || 'Copied to clipboard!');
+                        }).catch(function () {
+                            fallbackCopy(text, successMsg);
+                        });
+                    } else {
+                        fallbackCopy(text, successMsg);
+                    }
+                }
+
+                function fallbackCopy(text, successMsg) {
                     const tempArea = document.createElement('textarea');
                     tempArea.value = text;
                     tempArea.setAttribute('readonly', '');
@@ -1471,62 +1899,149 @@
                     document.body.appendChild(tempArea);
                     tempArea.focus();
                     tempArea.select();
+
                     try {
                         document.execCommand('copy');
-                        showToast(successMsg);
-                    } catch (err) {
-                        showToast('Please select and copy the text manually.');
+                        showToast(successMsg || 'Copied to clipboard!');
+                    } catch (copyErr) {
+                        console.error('Clipboard copy failed:', copyErr);
+                        showToast('Unable to copy automatically. Please copy manually.');
                     } finally {
                         document.body.removeChild(tempArea);
                     }
                 }
 
-                // 4. Mobile Navigation Toggle
-                const mobileBtn = document.getElementById('mobile-menu-btn');
+                // 4. Mobile Navigation Menu Toggle
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
                 const mobileMenu = document.getElementById('mobile-menu');
                 const iconHamburger = document.getElementById('icon-hamburger');
                 const iconClose = document.getElementById('icon-close');
-                const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-                function setMobileMenu(open) {
-                    if (!mobileMenu || !mobileBtn) return;
-                    if (open) {
-                        mobileMenu.classList.remove('hidden');
-                        iconHamburger.classList.add('hidden');
-                        iconClose.classList.remove('hidden');
-                        mobileBtn.setAttribute('aria-expanded', 'true');
-                    } else {
-                        mobileMenu.classList.add('hidden');
-                        iconHamburger.classList.remove('hidden');
-                        iconClose.classList.add('hidden');
-                        mobileBtn.setAttribute('aria-expanded', 'false');
+                function setMobileMenuState(isOpen) {
+                    if (!mobileMenu || !mobileMenuBtn) return;
+                    mobileMenu.classList.toggle('hidden', !isOpen);
+                    mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+                    if (iconHamburger) iconHamburger.classList.toggle('hidden', isOpen);
+                    if (iconClose) iconClose.classList.toggle('hidden', !isOpen);
+                }
+
+                if (mobileMenuBtn && mobileMenu) {
+                    mobileMenuBtn.addEventListener('click', function () {
+                        const isCurrentlyHidden = mobileMenu.classList.contains('hidden');
+                        setMobileMenuState(isCurrentlyHidden);
+                    });
+
+                    document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+                        link.addEventListener('click', function () {
+                            setMobileMenuState(false);
+                        });
+                    });
+                }
+
+                // 5. Sticky Navbar Elevation, Floating Home Button & Full-Page Scroll-Spy
+                const navbar = document.getElementById('navbar');
+                const floatingHomeBtn = document.getElementById('floating-home-btn');
+                const desktopNavLinks = document.querySelectorAll('.desktop-nav-link');
+                const mobileNavLinks = document.querySelectorAll('.mobile-nav-link[data-section]');
+                const trackedSections = ['home', 'about', 'services', 'projects', 'leadership'];
+
+                function setActiveNavSection(activeId) {
+                    desktopNavLinks.forEach(function (link) {
+                        const isMatch = link.getAttribute('data-section') === activeId;
+                        link.classList.toggle('nav-link-active', isMatch);
+                    });
+                    mobileNavLinks.forEach(function (link) {
+                        const isMatch = link.getAttribute('data-section') === activeId;
+                        link.classList.toggle('mobile-nav-link-active', isMatch);
+                    });
+                }
+
+                function updateScrollUI() {
+                    const scrollY = window.scrollY || window.pageYOffset || 0;
+
+                    if (navbar) {
+                        navbar.classList.toggle('shadow-lg', scrollY > 14);
                     }
+
+                    if (floatingHomeBtn) {
+                        if (scrollY > 350) {
+                            floatingHomeBtn.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
+                            floatingHomeBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                        } else {
+                            floatingHomeBtn.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
+                            floatingHomeBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                        }
+                    }
+
+                    // Determine active section for Scroll-Spy
+                    let currentSection = 'home';
+                    const scrollOffset = scrollY + 140;
+                    for (let i = 0; i < trackedSections.length; i++) {
+                        const secEl = document.getElementById(trackedSections[i]);
+                        if (secEl && scrollOffset >= secEl.offsetTop) {
+                            currentSection = trackedSections[i];
+                        }
+                    }
+                    setActiveNavSection(currentSection);
                 }
 
-                if (mobileBtn) {
-                    mobileBtn.addEventListener('click', function () {
-                        setMobileMenu(mobileMenu.classList.contains('hidden'));
-                    });
+                window.addEventListener('scroll', updateScrollUI, { passive: true });
+                updateScrollUI();
+
+                // Replay One-Shot Rising Light Effect on Architectural Blueprint Lines
+                const blueprintLightGroup = document.getElementById('blueprint-light-runners');
+
+                function triggerBlueprintLights() {
+                    if (!blueprintLightGroup) return;
+                    blueprintLightGroup.classList.remove('bp-lights-active');
+                    void blueprintLightGroup.getBoundingClientRect();
+                    blueprintLightGroup.classList.add('bp-lights-active');
                 }
 
-                mobileNavLinks.forEach(function (link) {
-                    link.addEventListener('click', function () {
-                        setMobileMenu(false);
-                    });
+                // Trigger initial sweep 250ms after full window load so visitors never miss the start
+                let initialLightsTriggered = false;
+                function scheduleInitialBlueprintLights() {
+                    if (initialLightsTriggered) return;
+                    initialLightsTriggered = true;
+                    setTimeout(triggerBlueprintLights, 250);
+                }
+
+                if (document.readyState === 'complete') {
+                    scheduleInitialBlueprintLights();
+                } else {
+                    window.addEventListener('load', scheduleInitialBlueprintLights, { once: true });
+                    setTimeout(scheduleInitialBlueprintLights, 1800);
+                }
+
+                window.addEventListener('pageshow', function (event) {
+                    if (event.persisted) {
+                        triggerBlueprintLights();
+                    }
+                });
+                window.addEventListener('hashchange', function () {
+                    if (window.location.hash === '#home' || window.location.hash === '') {
+                        triggerBlueprintLights();
+                    }
                 });
 
-                // 5. Sticky Navbar Elevation on Scroll
-                const navbar = document.getElementById('navbar');
-                window.addEventListener('scroll', function () {
-                    if (!navbar) return;
-                    if (window.scrollY > 14) {
-                        navbar.classList.add('shadow-lg');
-                    } else {
-                        navbar.classList.remove('shadow-lg');
+                function scrollToHomeTop(event) {
+                    if (event) event.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    if (window.history && window.history.replaceState) {
+                        window.history.replaceState(null, '', '#home');
                     }
-                }, { passive: true });
+                    triggerBlueprintLights();
+                }
 
-                // 6. Interactive Project Filter Tabs (All / Ongoing / Completed)
+                if (floatingHomeBtn) {
+                    floatingHomeBtn.addEventListener('click', scrollToHomeTop);
+                }
+
+                document.querySelectorAll('a[href="#home"]').forEach(function (homeAnchor) {
+                    homeAnchor.addEventListener('click', scrollToHomeTop);
+                });
+
+                // 6. Accessible Interactive Project Filter Tabs (All / Ongoing / Completed)
                 const filterTabs = document.querySelectorAll('.filter-tab');
                 const ongoingGroup = document.getElementById('ongoing-group');
                 const completedGroup = document.getElementById('completed-group');
@@ -1537,8 +2052,10 @@
 
                         filterTabs.forEach(function (btn) {
                             btn.classList.remove('active-tab');
+                            btn.setAttribute('aria-selected', 'false');
                         });
                         tab.classList.add('active-tab');
+                        tab.setAttribute('aria-selected', 'true');
 
                         if (selected === 'all') {
                             ongoingGroup.classList.remove('hidden');
@@ -1592,7 +2109,7 @@
                     });
                 }
 
-                // 9. Static-Hosting Quotation Form Handler
+                // 9. Static-Hosting Quotation Form Handler (WhatsApp + Email + Copy)
                 const form = document.getElementById('quotation-form');
                 const errorBox = document.getElementById('form-error-box');
                 const errorText = document.getElementById('form-error-text');
@@ -1600,6 +2117,8 @@
                 const confirmName = document.getElementById('confirm-name');
                 const summaryPreview = document.getElementById('inquiry-summary-preview');
                 const manualMailtoLink = document.getElementById('manual-mailto-link');
+                const manualWhatsappLink = document.getElementById('manual-whatsapp-link');
+                const sendWhatsappFormBtn = document.getElementById('send-whatsapp-form-btn');
                 const copyInquiryBtn = document.getElementById('copy-inquiry-btn');
                 const quickCopyFormBtn = document.getElementById('quick-copy-form-btn');
                 const resetFormBtn = document.getElementById('reset-form-btn');
@@ -1638,36 +2157,54 @@
                     };
                 }
 
+                function prepareInquirySubmission(channel) {
+                    const data = buildInquiryText();
+
+                    if (!data.fullName || !data.contactInfo || !data.serviceRequired || !data.projectDetails) {
+                        errorText.textContent = 'Please fill in your Full Name, Phone or Email, Service Required, and Project Location & Scope.';
+                        errorBox.classList.remove('hidden');
+                        successBox.classList.add('hidden');
+                        errorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        return;
+                    }
+
+                    errorBox.classList.add('hidden');
+                    latestFormattedInquiry = data.formatted;
+
+                    const recipient = 'anika.ent@yahoo.com';
+                    const subject = 'Quotation Request: ' + data.serviceRequired + ' — ' + data.fullName;
+                    const mailtoUrl = 'mailto:' + recipient
+                        + '?subject=' + encodeURIComponent(subject)
+                        + '&body=' + encodeURIComponent(latestFormattedInquiry);
+                    const whatsappUrl = 'https://wa.me/919820287245?text=' + encodeURIComponent(latestFormattedInquiry);
+
+                    confirmName.textContent = data.fullName;
+                    summaryPreview.textContent = latestFormattedInquiry;
+                    manualMailtoLink.setAttribute('href', mailtoUrl);
+                    if (manualWhatsappLink) {
+                        manualWhatsappLink.setAttribute('href', whatsappUrl);
+                    }
+
+                    successBox.classList.remove('hidden');
+                    form.classList.add('hidden');
+
+                    if (channel === 'whatsapp') {
+                        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+                    } else {
+                        window.location.href = mailtoUrl;
+                    }
+                }
+
                 if (form) {
                     form.addEventListener('submit', function (event) {
                         event.preventDefault();
-                        const data = buildInquiryText();
+                        prepareInquirySubmission('email');
+                    });
+                }
 
-                        if (!data.fullName || !data.contactInfo || !data.serviceRequired || !data.projectDetails) {
-                            errorText.textContent = 'Please fill in your Full Name, Phone or Email, Service Required, and Project Location & Scope.';
-                            errorBox.classList.remove('hidden');
-                            successBox.classList.add('hidden');
-                            errorBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                            return;
-                        }
-
-                        errorBox.classList.add('hidden');
-                        latestFormattedInquiry = data.formatted;
-
-                        const recipient = 'anika.ent@yahoo.com';
-                        const subject = 'Quotation Request: ' + data.serviceRequired + ' — ' + data.fullName;
-                        const mailtoUrl = 'mailto:' + recipient
-                            + '?subject=' + encodeURIComponent(subject)
-                            + '&body=' + encodeURIComponent(latestFormattedInquiry);
-
-                        confirmName.textContent = data.fullName;
-                        summaryPreview.textContent = latestFormattedInquiry;
-                        manualMailtoLink.setAttribute('href', mailtoUrl);
-
-                        successBox.classList.remove('hidden');
-                        form.classList.add('hidden');
-
-                        window.location.href = mailtoUrl;
+                if (sendWhatsappFormBtn) {
+                    sendWhatsappFormBtn.addEventListener('click', function () {
+                        prepareInquirySubmission('whatsapp');
                     });
                 }
 
